@@ -3,7 +3,7 @@ import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
-  title: "Contact | Grupo Delta",
+  title: "Contact | ENGSAFETY",
 };
 
 export default function ContatoPage() {
@@ -23,7 +23,7 @@ export default function ContatoPage() {
           {/* LEFT TEXT */}
           <div className="space-y-5">
             <p className="text-xs font-semibold tracking-[0.25em] text-sky-600 uppercase">
-              Grupo Delta Solutions and Engineering
+              ENGSAFETY Solutions and Engineering
             </p>
 
             <h1 className="text-3xl md:text-4xl font-bold text-[#1c2743]">
@@ -44,7 +44,7 @@ export default function ContatoPage() {
                   href="/contato"
                   className="text-sky-600 hover:text-sky-700 underline underline-offset-2"
                 >
-                  comercial@grupodelta.ind.br
+                  comercial@engsafety.ind.br
                 </Link>
               </p>
               <p>
@@ -105,7 +105,7 @@ export default function ContatoPage() {
         <div className="max-w-5xl mx-auto px-4 md:px-6 text-center space-y-10">
           <div className="space-y-3">
             <p className="text-xs font-semibold tracking-[0.25em] text-sky-600 uppercase">
-              Grupo Delta Solutions and Engineering
+              ENGSAFETY Solutions and Engineering
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#1c2743]">
               Contact Information
@@ -129,7 +129,7 @@ export default function ContatoPage() {
               </div>
               <h3 className="font-semibold text-[#1c2743]">Sales Email</h3>
               <p className="text-sky-600 font-medium">
-                comercial@grupodelta.ind.br
+                comercial@engsafety.ind.br
               </p>
               <p className="text-[11px] uppercase tracking-[0.16em] text-slate-400">
                 Click to open the form
@@ -169,7 +169,7 @@ export default function ContatoPage() {
                   📍
                 </span>
               </div>
-              <h3 className="font-semibold text-[#1c2743]">Delta Base</h3>
+              <h3 className="font-semibold text-[#1c2743]">ENGSAFETY Base</h3>
               <p>Rua Alberto Siqueira, 1065</p>
               <p>Lots 32 and 33 – Vila São Sebastião</p>
               <p>Duque de Caxias – RJ</p>

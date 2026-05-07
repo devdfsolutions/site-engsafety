@@ -13,7 +13,7 @@ export default function InspecaoPage() {
       <section className="relative w-full h-[360px] md:h-[460px] lg:h-[520px] overflow-hidden group">
         {/* Image */}
         <Image
-          src="/img/servicos/inspecoes/heroinspec.png"
+          src="/img/servicos/inspecoes/heroinspec1.png"
           alt="Inspection Services"
           fill
           priority
@@ -89,7 +89,7 @@ export default function InspecaoPage() {
           {/* MAIN TEXT */}
           <div className="space-y-4 md:space-y-6">
             <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-sky-600 uppercase">
-              Grupo Delta Solutions and Engineering
+              ENGSAFETY Solutions and Engineering
             </p>
 
             <h1 className="text-3xl md:text-4xl font-bold text-[#1c2743] leading-tight">

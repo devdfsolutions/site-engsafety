@@ -25,12 +25,13 @@ export default function Footer({ lang = "pt" }: FooterProps) {
         {/* Logo left + text right */}
         <div className="space-y-4">
           <div className="flex items-center gap-2">
-            <div className="relative w-32 h-24 md:w-40 md:h-28">
+            <div className="relative w-60 h-24 md:w-80 md:h-28">
               <Image
-                src="/img/logodeltabranca1.png"
-                alt="Grupo Delta"
+                src="/img/eng/logos/logo-eng2branco.png"
+                alt="EngSafety"
                 fill
                 className="object-contain"
+                priority
               />
             </div>
 
@@ -39,12 +40,18 @@ export default function Footer({ lang = "pt" }: FooterProps) {
                 {isEN ? (
                   <>
                     <p>Turning challenges into solutions!</p>
-                    <p>Delta Solutions is a reference in engineering services.</p>
+                    <p>
+                      EngSafety Solutions is a reference in engineering
+                      services.
+                    </p>
                   </>
                 ) : (
                   <>
                     <p>Transformando desafios em soluções!</p>
-                    <p>A Delta Soluções é referência em serviços de engenharia.</p>
+                    <p>
+                      A EngSafety Soluções é referência em serviços de
+                      engenharia.
+                    </p>
                   </>
                 )}
               </div>
@@ -105,6 +112,7 @@ export default function Footer({ lang = "pt" }: FooterProps) {
           <h3 className="font-semibold tracking-wide uppercase text-slate-100">
             {isEN ? "Useful links" : "Áreas úteis"}
           </h3>
+
           <ul className="space-y-1 text-slate-300">
             <li>
               <Link
@@ -114,6 +122,7 @@ export default function Footer({ lang = "pt" }: FooterProps) {
                 {isEN ? "Home" : "Início"}
               </Link>
             </li>
+
             <li>
               <Link
                 href={isEN ? "/about" : "/sobre"}
@@ -122,6 +131,7 @@ export default function Footer({ lang = "pt" }: FooterProps) {
                 {isEN ? "About us" : "Sobre nós"}
               </Link>
             </li>
+
             <li>
               <Link
                 href={isEN ? "/services" : "/servicos"}
@@ -130,12 +140,24 @@ export default function Footer({ lang = "pt" }: FooterProps) {
                 {isEN ? "Services" : "Serviços"}
               </Link>
             </li>
+
             <li>
               <Link
                 href={isEN ? "/contact" : "/contato"}
                 className="hover:text-[#3eb1f9] transition-colors"
               >
                 {isEN ? "Contact" : "Contato"}
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/etica-denuncia"
+                className="hover:text-[#3eb1f9] transition-colors"
+              >
+                {isEN
+                  ? "Ethics & Whistleblowing Channel"
+                  : "Canal de Ética e Denúncias"}
               </Link>
             </li>
           </ul>
@@ -181,7 +203,7 @@ export default function Footer({ lang = "pt" }: FooterProps) {
                 href={isEN ? "/contact" : "/contato"}
                 className="hover:text-[#3eb1f9] transition-colors"
               >
-                comercial@grupodelta.ind.br
+                comercial@engsafety.ind.br
               </Link>
             </div>
           </div>

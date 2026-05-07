@@ -1,4 +1,4 @@
-// app/page.tsx
+// app/home/page.tsx
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +13,6 @@ export default function HomePage() {
 
   const galleryPhotos = [1, 2, 3, 4, 5, 6];
 
-  // ✅ AJUSTE AQUI: slugs corretos (pastas reais)
   const services = [
     {
       slug: "load-testing",
@@ -67,15 +66,13 @@ export default function HomePage() {
           </h1>
 
           <p className="max-w-2xl text-sm md:text-base text-slate-100">
-            Grupo Delta delivers complete solutions in load testing, inspections,
+            EngSafety delivers complete solutions in load testing, inspections,
             maintenance, lifesaving, and applied engineering, supporting offshore
             and onshore projects with a focus on safety, compliance, and
             operational availability.
           </p>
 
-          {/* HERO BUTTONS */}
           <div className="flex flex-wrap gap-4">
-            {/* WhatsApp Button */}
             <a
               href="https://api.whatsapp.com/send/?phone=5521986560236&text=Hello%21+I+found+your+company+on+Google+and+would+like+to+learn+more+about+your+services.&type=phone_number&app_absent=0"
               target="_blank"
@@ -92,7 +89,6 @@ export default function HomePage() {
               Talk to a specialist
             </a>
 
-            {/* Secondary Button */}
             <Link
               href="/services"
               className="
@@ -109,7 +105,7 @@ export default function HomePage() {
           </div>
 
           <p className="max-w-2xl text-sm md:text-base text-slate-100">
-            Grupo Delta • Excellence in Offshore and Onshore Solutions.
+            EngSafety • Excellence in Offshore and Onshore Solutions.
           </p>
         </div>
       </section>
@@ -167,8 +163,8 @@ export default function HomePage() {
                   className="group relative aspect-[4/5] rounded-xl overflow-hidden bg-slate-100 shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <Image
-                    src={`/img/galeria/foto${n}.jpg`}
-                    alt={`Grupo Delta Operation ${n}`}
+                    src={`/img/eng/inicial/foto${n}.png`}
+                    alt={`EngSafety Operation ${n}`}
                     fill
                     className="object-cover transition-transform duration-200 group-hover:scale-105"
                   />
@@ -183,6 +179,7 @@ export default function HomePage() {
           <h2 className="text-[25px] font-semibold tracking-[0.1em] text-sky-700 uppercase">
             We are a certified company.
           </h2>
+
           <p className="text-[16px] leading-relaxed text-slate-600">
             Our operations are supported by certifications and recognitions that
             reinforce our commitment to quality, compliance, and safety across
@@ -199,6 +196,7 @@ export default function HomePage() {
                   className="object-contain transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
+
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">ISO 9001:2015</h3>
                 <p className="text-xs text-slate-500">
@@ -216,6 +214,7 @@ export default function HomePage() {
                   className="object-contain transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
+
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">
                   Ports and Coasts Directorate
@@ -233,6 +232,7 @@ export default function HomePage() {
                   className="object-contain transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
+
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">CRALOG</h3>
                 <p className="text-xs text-slate-500">
@@ -250,6 +250,7 @@ export default function HomePage() {
                   className="object-contain transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
+
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">DNV</h3>
                 <p className="text-xs text-slate-500">
@@ -267,9 +268,9 @@ export default function HomePage() {
           </h2>
 
           <p className="text-[16px] leading-relaxed text-slate-600">
-            Our solutions are designed to meet the demands of vessels,
-            platforms, shipyards, and onshore industrial units, supported by
-            specialized teams and a strong focus on safety and compliance.
+            Our solutions are structured to meet the demands of vessels,
+            platforms, shipyards, and onshore industrial units, with specialized
+            teams focused on safety and compliance.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -302,9 +303,11 @@ export default function HomePage() {
                     <h3 className="text-[20px] font-semibold text-[#1c2743]">
                       {service.title}
                     </h3>
+
                     <p className="text-[14px] md:text-[16px] leading-relaxed text-slate-700">
                       {service.description}
                     </p>
+
                     <p className="text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.22em] text-sky-700">
                       Learn more
                     </p>

@@ -157,13 +157,16 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto px-5 md:px-8 py-3 flex items-center justify-between gap-5">
         {/* LOGO */}
-        <Link href={isEN ? "/home" : "/"} className="flex items-center gap-3">
-          <div className="relative w-40 h-10 md:w-48 md:h-20">
+        <Link
+          href={isEN ? "/home" : "/"}
+          className="flex items-center shrink-0"
+        >
+          <div className="relative w-48 h-14 md:w-60 md:h-16">
             <Image
-              src="/img/logodelta.png"
-              alt="Delta Group"
+              src="/img/eng/logos/logo-eng-big.png"
+              alt="EngSafety"
               fill
               className="object-contain"
               priority

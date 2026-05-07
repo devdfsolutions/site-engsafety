@@ -357,7 +357,7 @@ export default function SolucoesMroPage() {
           <div className="max-w-5xl mx-auto px-4 md:px-6 text-center space-y-12">
             <div className="space-y-3">
               <p className="text-xs font-semibold tracking-[0.25em] text-sky-600 uppercase">
-                Grupo Delta Solutions and Engineering
+                ENGSAFETY Solutions and Engineering
               </p>
               <h2 className="text-2xl md:text-3xl font-bold text-[#1c2743]">
                 Contact Information
@@ -380,7 +380,7 @@ export default function SolucoesMroPage() {
                   </span>
                 </div>
                 <h3 className="font-semibold text-[#1c2743]">Sales Email</h3>
-                <p>comercial@grupodelta.ind.br</p>
+                <p>comercial@engsafety.ind.br</p>
               </a>
 
               {/* Phones → WhatsApp */}
@@ -411,7 +411,7 @@ export default function SolucoesMroPage() {
                     📍
                   </span>
                 </div>
-                <h3 className="font-semibold text-[#1c2743]">Delta Base</h3>
+                <h3 className="font-semibold text-[#1c2743]">ENGSAFETY Base</h3>
                 <p>Rio de Janeiro | Duque de Caxias</p>
               </a>
             </div>

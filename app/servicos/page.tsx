@@ -114,7 +114,7 @@ export default function ServicesPage() {
           muted
           playsInline
         >
-          <source src="/video/clipe-servicos.mp4" type="video/mp4" />
+          <source src="/video/vidservicos.mp4" type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/60 via-slate-950/20 to-slate-950/10" />
@@ -129,7 +129,7 @@ export default function ServicesPage() {
         >
           {/* subtítulo – tamanho da fonte: text-sm / md:text-base */}
           <p className="text-sm md:text-base font-semibold tracking-[0.25em] text-sky-300 uppercase">
-            Grupo Delta Soluções e Engenharia
+            ENGSAFETY Soluções e Engenharia
           </p>
 
           {/* título – tamanho da fonte: text-4xl / md:text-6xl */}

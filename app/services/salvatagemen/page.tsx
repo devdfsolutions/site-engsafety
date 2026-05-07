@@ -94,7 +94,7 @@ export default function LsaSalvatagemPage() {
               className="rounded-xl object-cover shadow-sm"
             />
             <Image
-              src="/img/servicos/lsa/barcoguincho2.png"
+              src="/img/servicos/lsa/barcoguincho22.png"
               alt="Winch operation"
               width={600}
               height={400}
@@ -119,7 +119,7 @@ export default function LsaSalvatagemPage() {
           {/* MAIN TEXT */}
           <div className="space-y-4 md:space-y-6">
             <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-sky-600 uppercase">
-              Grupo Delta Solutions and Engineering
+              ENGSAFETY Solutions and Engineering
             </p>
 
             <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#1c2743] leading-tight">
@@ -219,7 +219,7 @@ export default function LsaSalvatagemPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4">
               <Image
-                src="/img/servicos/lsa/barcoguincho2.png"
+                src="/img/servicos/lsa/barcoguincho22.png"
                 alt="Structural repairs"
                 fill
                 className="rounded-xl object-cover"
@@ -244,7 +244,7 @@ export default function LsaSalvatagemPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4">
               <Image
-                src="/img/servicos/lsa/painelbarco.png"
+                src="/img/servicos/lsa/painelbarco11.png"
                 alt="Lifeboat refurbishment"
                 fill
                 className="rounded-xl object-cover"
@@ -283,7 +283,7 @@ export default function LsaSalvatagemPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4">
               <Image
-                src="/img/servicos/lsa/truco1.png"
+                src="/img/servicos/lsa/truco11.png"
                 alt="Davit maintenance"
                 fill
                 className="rounded-xl object-cover"
@@ -302,7 +302,7 @@ export default function LsaSalvatagemPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4">
               <Image
-                src="/img/servicos/lsa/Design-sem-nome-23.png"
+                src="/img/servicos/lsa/solda1.png"
                 alt="Winch maintenance"
                 fill
                 className="rounded-xl object-cover"

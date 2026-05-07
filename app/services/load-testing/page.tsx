@@ -126,7 +126,7 @@ export default function TestesDeCargaPage() {
           <div className="space-y-4 md:space-y-6">
             {/* adjust font size / spacing here */}
             <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-sky-600 uppercase">
-              Grupo Delta Solutions and Engineering
+              ENGSAFETY Solutions and Engineering
             </p>
 
             <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#1c2743] leading-tight">
@@ -259,7 +259,7 @@ export default function TestesDeCargaPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4 rounded-xl overflow-hidden shadow-sm">
               <Image
-                src="/img/servicos/teste-carga/cargaemolhais.png"
+                src="/img/servicos/teste-carga/cargaemolhais1.png"
                 alt="Load testing on padeyes"
                 fill
                 className="object-cover"
@@ -316,7 +316,7 @@ export default function TestesDeCargaPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4 rounded-xl overflow-hidden shadow-sm">
               <Image
-                src="/img/servicos/teste-carga/testeponterolante.png"
+                src="/img/servicos/teste-carga/testeponterolante1.png"
                 alt="Load test on overhead crane"
                 fill
                 className="object-cover"

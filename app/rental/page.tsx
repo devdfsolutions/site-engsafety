@@ -22,7 +22,7 @@ export default function LocacaoPage() {
         {/* Background image */}
         <Image
           src="/img/locacao/heroloc.png"
-          alt="Equipment rental Grupo Delta"
+          alt="Equipment rental ENGSAFETY"
           fill
           priority
           className="object-cover"
@@ -73,7 +73,7 @@ export default function LocacaoPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c2743]">
             Rental for Testing
           </h2>
-          <p className="text-slate-500 text-sm md:text-base">Grupo Delta</p>
+          <p className="text-slate-500 text-sm md:text-base">ENGSAFETY</p>
         </section>
 
         {/* =====================================
@@ -156,7 +156,7 @@ export default function LocacaoPage() {
           <div className="relative w-full min-h-[260px] md:min-h-[320px] rounded-xl overflow-hidden group">
             <Image
               src="/img/locacao/loc5.png"
-              alt="Grupo Delta rescue boat"
+              alt="ENGSAFETY rescue boat"
               fill
               className="object-cover"
             />
@@ -244,7 +244,7 @@ export default function LocacaoPage() {
             {mode === "locacao" ? (
               <div className="space-y-3 text-sm md:text-[15px] text-slate-700 leading-relaxed">
                 <p>
-                  Safety in maritime operations is a priority, and Grupo Delta’s
+                  Safety in maritime operations is a priority, and ENGSAFETY
                   rescue boat rental ensures efficiency and reliability for your
                   company.
                 </p>
@@ -254,14 +254,13 @@ export default function LocacaoPage() {
                   for your demand.
                 </p>
                 <p>
-                  Ensure the protection and safety of your crew with Grupo
-                  Delta’s rescue boats.
+                  Ensure the protection and safety of your crew with ENGSAFETY rescue boats.
                 </p>
               </div>
             ) : (
               <div className="space-y-3 text-sm md:text-[15px] text-slate-700 leading-relaxed">
                 <p>
-                  When it comes to safety at sea, Grupo Delta delivers excellent
+                  When it comes to safety at sea, ENGSAFETY delivers excellent
                   solutions with the{" "}
                   <strong>sale of high-quality rescue boats</strong>.
                 </p>
@@ -270,7 +269,7 @@ export default function LocacaoPage() {
                   choose the ideal model according to your operational needs.
                 </p>
                 <p>
-                  Invest in your team’s safety with Grupo Delta rescue boats.
+                  Invest in your team’s safety with ENGSAFETY rescue boats.
                   Contact us to learn about our models and get a solution
                   tailored to your operations.
                 </p>

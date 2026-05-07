@@ -74,7 +74,7 @@ export default function LsaSalvatagemPage() {
 
       {/* =====================================
           BLOCO PRINCIPAL COM BG + COLAGEM
-          (usa painelbarco, barcoguincho1, barcoguincho2, barcomar, colete)
+          (usa painelbarco, barcoguincho1, barcoguincho22, barcomar, colete)
       ====================================== */}
       <section
         className="relative py-16 md:py-20 px-6 md:px-10 bg-cover bg-center"
@@ -94,7 +94,7 @@ export default function LsaSalvatagemPage() {
               className="rounded-xl object-cover shadow-sm"
             />
             <Image
-              src="/img/servicos/lsa/barcoguincho2.png"
+              src="/img/servicos/lsa/barcoguincho22.png"
               alt="Operação com guincho"
               width={600}
               height={400}
@@ -119,7 +119,7 @@ export default function LsaSalvatagemPage() {
           {/* TEXTO PRINCIPAL */}
           <div className="space-y-4 md:space-y-6">
             <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-sky-600 uppercase">
-              Grupo Delta Soluções e Engenharia
+              ENGSAFETY Soluções e Engenharia
             </p>
 
             <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#1c2743] leading-tight">
@@ -220,7 +220,7 @@ export default function LsaSalvatagemPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4">
               <Image
-                src="/img/servicos/lsa/barcoguincho2.png"
+                src="/img/servicos/lsa/barcoguincho22.png"
                 alt="Reparos estruturais"
                 fill
                 className="rounded-xl object-cover"
@@ -245,7 +245,7 @@ export default function LsaSalvatagemPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4">
               <Image
-                src="/img/servicos/lsa/painelbarco.png"
+                src="/img/servicos/lsa/painelbarco11.png"
                 alt="Revitalização de botes"
                 fill
                 className="rounded-xl object-cover"
@@ -284,7 +284,7 @@ export default function LsaSalvatagemPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4">
               <Image
-                src="/img/servicos/lsa/truco1.png"
+                src="/img/servicos/lsa/truco11.png"
                 alt="Manutenção de turcos"
                 fill
                 className="rounded-xl object-cover"
@@ -303,7 +303,7 @@ export default function LsaSalvatagemPage() {
           <div className="text-center">
             <div className="relative w-full h-56 mb-4">
               <Image
-                src="/img/servicos/lsa/Design-sem-nome-23.png"
+                src="/img/servicos/lsa/solda1.png"
                 alt="Manutenção de guinchos"
                 fill
                 className="rounded-xl object-cover"

@@ -66,7 +66,7 @@ export default function HomePage() {
           </h1>
 
           <p className="max-w-2xl text-sm md:text-base text-slate-100">
-            O Grupo Delta oferece soluções completas em testes de carga,
+            A ENGSAFETY oferece soluções completas em testes de carga,
             inspeções, manutenção, salvatagem e engenharia aplicada, atendendo
             projetos offshore e onshore com foco em segurança, conformidade e
             disponibilidade operacional.
@@ -108,7 +108,7 @@ export default function HomePage() {
           </div>
 
           <p className="max-w-2xl text-sm md:text-base text-slate-100">
-            Grupo Delta • Excelência em Soluções Offshore e Onshore.
+            ENGSAFETY • Excelência em Soluções Offshore e Onshore.
           </p>
         </div>
       </section>
@@ -166,8 +166,8 @@ export default function HomePage() {
                   className="group relative aspect-[4/5] rounded-xl overflow-hidden bg-slate-100 shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <Image
-                    src={`/img/galeria/foto${n}.jpg`}
-                    alt={`Operação Grupo Delta ${n}`}
+                    src={`/img/eng/inicial/foto${n}.png`}
+                    alt={`Operação EngSafety ${n}`}
                     fill
                     className="object-cover transition-transform duration-200 group-hover:scale-105"
                   />

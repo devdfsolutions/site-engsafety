@@ -22,7 +22,7 @@ export default function LocacaoPage() {
         {/* Imagem de fundo */}
         <Image
           src="/img/locacao/heroloc.png"
-          alt="Locação de equipamentos Grupo Delta"
+          alt="Locação de equipamentos ENGSAFETY"
           fill
           priority
           className="object-cover"
@@ -73,7 +73,7 @@ export default function LocacaoPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c2743]">
             Locação para Testes
           </h2>
-          <p className="text-slate-500 text-sm md:text-base">Grupo Delta</p>
+          <p className="text-slate-500 text-sm md:text-base">ENGSAFETY</p>
         </section>
 
         {/* =====================================
@@ -156,7 +156,7 @@ export default function LocacaoPage() {
 <div className="relative w-full min-h-[260px] md:min-h-[320px] rounded-xl overflow-hidden group">
   <Image
     src="/img/locacao/loc5.png"
-    alt="Bote de resgate Grupo Delta"
+    alt="Bote de resgate ENGSAFETY"
     fill
     className="object-cover"
   />
@@ -246,7 +246,7 @@ export default function LocacaoPage() {
               <div className="space-y-3 text-sm md:text-[15px] text-slate-700 leading-relaxed">
                 <p>
                   A segurança em operações marítimas é prioridade, e a locação
-                  de botes de resgate do Grupo Delta garante eficiência e
+                  de botes de resgate da ENGSAFETY garante eficiência e
                   confiabilidade para sua empresa.
                 </p>
                 <p>
@@ -256,13 +256,13 @@ export default function LocacaoPage() {
                 </p>
                 <p>
                   Garanta a proteção e segurança da sua tripulação com os botes
-                  de resgate do Grupo Delta.
+                  de resgate da ENGSAFETY.
                 </p>
               </div>
             ) : (
               <div className="space-y-3 text-sm md:text-[15px] text-slate-700 leading-relaxed">
                 <p>
-                  Quando o assunto é segurança no mar, o Grupo Delta oferece
+                  Quando o assunto é segurança no mar, a ENGSAFETY oferece
                   soluções de excelência com a{" "}
                   <strong>venda de botes de resgate</strong> de alta qualidade.
                 </p>
@@ -273,7 +273,7 @@ export default function LocacaoPage() {
                 </p>
                 <p>
                   Invista na segurança da sua equipe com os botes de resgate do
-                  Grupo Delta. Entre em contato para conhecer nossos modelos e
+                  ENGSAFETY. Entre em contato para conhecer nossos modelos e
                   obter uma solução sob medida para suas operações.
                 </p>
               </div>

@@ -8,7 +8,7 @@ const carouselSlides = [
   {
     img: "/img/sobre/fotosobre3.jpg",
     title: "Mulheres Liderando com Excelência",
-    text: "Profissionais que atuam com competência e determinação em um setor desafiador, essenciais para o sucesso das operações offshore do Grupo Delta.",
+    text: "Profissionais que atuam com competência e determinação em um setor desafiador, essenciais para o sucesso das operações offshore da ENGSAFETY.",
   },
   {
     img: "/img/sobre/fotosobre5.jpg",
@@ -60,7 +60,7 @@ export default function SobrePage() {
       <section className="relative w-full h-[320px] md:h-[420px] lg:h-[480px]">
         <Image
           src="/img/sobre/fotosobre2.jpg"
-          alt="Operação offshore do Grupo Delta"
+          alt="Operação offshore da ENGSAFETY"
           fill
           priority
           className="object-cover"
@@ -79,7 +79,7 @@ export default function SobrePage() {
       {/* INTRO / NOSSOS COMPROMISSOS */}
       <section className="max-w-6xl mx-auto px-4 lg:px-0 py-12 md:py-16">
         <p className="text-xs font-semibold tracking-[0.25em] text-blue-700 uppercase mb-3">
-          Grupo Delta Soluções e Engenharia
+          ENGSAFETY Soluções e Engenharia
         </p>
 
         <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-6">
@@ -89,7 +89,7 @@ export default function SobrePage() {
         <div className="space-y-4 text-slate-600 leading-relaxed max-w-3xl">
           <p>
             Com uma equipe altamente qualificada e um compromisso inabalável com
-            a segurança, inovação e sustentabilidade, o Grupo Delta entrega
+            a segurança, inovação e sustentabilidade, a ENGSAFETY entrega
             soluções completas em engenharia, manutenção, inspeções e testes de
             carga para operações offshore e onshore em todo o território
             nacional.
@@ -136,74 +136,7 @@ export default function SobrePage() {
         ))}
       </section>
 
-      {/* CARROSSEL – MULHERES LIDERANDO COM EXCELÊNCIA */}
-      <section className="w-full bg-slate-100 py-10">
-        <div className="max-w-6xl mx-auto px-4 lg:px-0">
-          <div className="relative w-full overflow-hidden rounded-2xl shadow-md">
-            {/* Slides */}
-            <div
-              className="flex transition-transform duration-700 ease-out"
-              style={{
-                transform: `translateX(-${currentSlide * 100}%)`,
-              }}
-            >
-              {carouselSlides.map((slide) => (
-                <div
-                  key={slide.img}
-                  className="relative min-w-full h-[420px] md:h-[500px] lg:h-[550px]"
-                >
-                  <Image
-                    src={slide.img}
-                    alt={slide.title}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/35 flex items-end">
-                    <div className="p-6 text-slate-50 max-w-xl">
-                      <h4 className="font-semibold text-lg md:text-xl mb-1">
-                        {slide.title}
-                      </h4>
-                      <p className="text-xs md:text-sm">{slide.text}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Botões laterais */}
-            <button
-              type="button"
-              onClick={prevSlide}
-              className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full w-9 h-9 flex items-center justify-center shadow"
-            >
-              ‹
-            </button>
-            <button
-              type="button"
-              onClick={nextSlide}
-              className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full w-9 h-9 flex items-center justify-center shadow"
-            >
-              ›
-            </button>
-          </div>
-
-          {/* Bolinhas indicadoras */}
-          <div className="flex justify-center gap-2 mt-4">
-            {carouselSlides.map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 rounded-full transition-all ${
-                  currentSlide === index
-                    ? "bg-slate-800 w-5"
-                    : "bg-slate-400 hover:bg-slate-500"
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* O QUE É IMPORTANTE PARA NÓS */}
       <section className="relative w-full overflow-hidden">
@@ -224,8 +157,8 @@ export default function SobrePage() {
         {/* Logo no canto direito */}
         <div className="absolute right-5 bottom-60 w-24 md:w-40 opacity-70">
           <Image
-            src="/img/logodeltabranca1.png"
-            alt="Logo Delta"
+            src="/img/eng/logos/logo-eng2branco.png"
+            alt="Logo ENGSAFETY"
             width={160}
             height={80}
             className="w-full h-auto"
