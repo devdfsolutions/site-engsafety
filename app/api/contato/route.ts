@@ -15,11 +15,10 @@ export async function POST(req: Request) {
 
     const fromEmail =
       process.env.CONTACT_FROM_EMAIL ||
-      "Site Grupo Delta <no-reply@grupodelta.ind.br>";
+      "ENG Safety <comercial@engsafety.ind.br>";
 
-    // ✅ aceita 1 ou vários emails separados por vírgula
     const toRaw =
-      process.env.CONTACT_TO_EMAIL || "comercial@grupodelta.ind.br";
+      process.env.CONTACT_TO_EMAIL || "comercial@engsafety.ind.br";
 
     const toEmails = toRaw
       .split(",")
@@ -28,8 +27,8 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: fromEmail,
-      to: toEmails, // ✅ ARRAY (correto no Resend)
-      subject: `Novo contato pelo site - ${nome}`,
+      to: toEmails,
+      subject: `Novo contato pelo site ENG Safety - ${nome}`,
       replyTo: email,
       text: `
 Nome: ${nome}
@@ -44,7 +43,7 @@ ${mensagem}
 
     return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error("Erro ao enviar contato:", error);
+    console.error("Erro ao enviar contato ENG Safety:", error);
     return NextResponse.json(
       { error: "Erro ao enviar mensagem." },
       { status: 500 }
