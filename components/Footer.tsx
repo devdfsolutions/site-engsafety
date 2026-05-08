@@ -180,7 +180,7 @@ export default function Footer({ lang = "pt" }: FooterProps) {
               </a>
 
               <a
-                href="tel:+5521995303032"
+                href={WHATSAPP_URL}
                 className="block hover:text-[#3eb1f9] transition-colors"
               >
                 (21) 99530-3032
