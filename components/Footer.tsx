@@ -61,7 +61,7 @@ export default function Footer({ lang = "pt" }: FooterProps) {
           {/* Social links */}
           <div className="flex gap-6 pt-2 text-xs text-slate-300">
             <a
-              href="MUDAR-AQUI"
+              href="https://www.engsafety.ind.br/"
               target="_blank"
               rel="noreferrer"
               className="w-8 h-8 rounded-md border border-slate-300/40 flex items-center justify-center hover:bg-slate-100 transition-colors"
@@ -76,7 +76,7 @@ export default function Footer({ lang = "pt" }: FooterProps) {
             </a>
 
             <a
-              href="MUDAR-AQUI"
+              href="https://www.engsafety.ind.br/"
               target="_blank"
               rel="noreferrer"
               className="w-8 h-8 rounded-md border border-slate-300/40 flex items-center justify-center hover:bg-slate-100 transition-colors"
@@ -91,7 +91,7 @@ export default function Footer({ lang = "pt" }: FooterProps) {
             </a>
 
             <a
-              href="MUDAR-AQUI"
+              href="https://www.engsafety.ind.br/"
               target="_blank"
               rel="noreferrer"
               className="w-8 h-8 rounded-md border border-slate-300/40 flex items-center justify-center hover:bg-slate-100 transition-colors"
