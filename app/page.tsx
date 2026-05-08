@@ -238,7 +238,7 @@ export default function HomePage() {
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">CRALOG</h3>
                 <p className="text-xs text-slate-500">
-                  Certificação em logística.
+                  Certificação em Savatagem.
                 </p>
               </div>
             </div>
