@@ -13,9 +13,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Grupo Delta - Testes de Carga e Engenharia",
+  title: "ENGSAFETY - Testes de Carga e Engenharia",
   description:
-    "Grupo Delta - Soluções completas em testes de carga, inspeções, manutenção, salvatagem e engenharia aplicada para projetos offshore e onshore.",
+    "ENGSAFETY - Soluções completas em testes de carga, inspeções, manutenção, salvatagem e engenharia aplicada para projetos offshore e onshore.",
 };
 
 export default function RootLayout({
