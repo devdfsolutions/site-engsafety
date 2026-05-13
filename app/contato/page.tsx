@@ -11,7 +11,7 @@ export default function ContatoPage() {
     "https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%2C+gostaria+de+falar+com+a+equipe+comercial.&type=phone_number&app_absent=0";
 
   const mapsUrl =
-    "https://www.google.com/maps?q=Rua+Alberto+Siqueira,+1065,+Duque+de+Caxias,+RJ&output=embed";
+    "https://www.google.com/maps?q=Rua+Uçá,+363,+Jardim+Guanabara,+Rio+de+Janeiro,+RJ,+21940-480&output=embed";
 
   return (
     <main className="min-h-screen bg-white">
@@ -61,8 +61,7 @@ export default function ContatoPage() {
               </p>
               <p>
                 <span className="font-semibold text-[#1c2743]">Endereço:</span>{" "}
-                Rua Alberto Siqueira, 1065 – Vila São Sebastião, Duque de Caxias
-                – RJ
+                Rua Uçá, 363 – Jardim Guanabara, Rio de Janeiro – RJ – RJ
               </p>
             </div>
           </div>
@@ -82,8 +81,8 @@ export default function ContatoPage() {
               Onde estamos
             </h2>
             <p className="text-sm md:text-base text-slate-600 max-w-2xl">
-              Rua Alberto Siqueira, 1065 – Lotes 32 e 33 – Vila São Sebastião –
-              CEP 25065-225 – Duque de Caxias, Rio de Janeiro.
+              Rua Uçá, 363 – Jardim Guanabara – CEP 21940-480 – Rio de Janeiro –
+              RJ.
             </p>
           </div>
 
@@ -159,7 +158,7 @@ export default function ContatoPage() {
 
             {/* Endereço -> também manda para /contato (pode virar link de mapa se quiser) */}
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Rua+Alberto+Siqueira,+1065,+Duque+de+Caxias,+RJ"
+              href="https://www.google.com/maps/search/?api=1&query=Rua+Uçá,+363,+Jardim+Guanabara,+Rio+de+Janeiro,+RJ"
               target="_blank"
               rel="noreferrer"
               className="group space-y-2 rounded-xl border border-slate-200 bg-white px-5 py-5 shadow-sm hover:shadow-md hover:border-sky-400 transition-all"
@@ -170,9 +169,9 @@ export default function ContatoPage() {
                 </span>
               </div>
               <h3 className="font-semibold text-[#1c2743]">Base ENGSAFETY</h3>
-              <p>Rua Alberto Siqueira, 1065</p>
-              <p>Lotes 32 e 33 – Vila São Sebastião</p>
-              <p>Duque de Caxias – RJ</p>
+              <p>Rua Uçá, 363</p>
+              <p>Jardim Guanabara</p>
+              <p>Rio de Janeiro – RJ</p>
               <p className="text-[11px] uppercase tracking-[0.16em] text-slate-400">
                 Clique para abrir no mapa
               </p>
