@@ -67,9 +67,9 @@ export default function HomePage() {
 
           <p className="max-w-2xl text-sm md:text-base text-slate-100">
             EngSafety delivers complete solutions in load testing, inspections,
-            maintenance, lifesaving, and applied engineering, supporting offshore
-            and onshore projects with a focus on safety, compliance, and
-            operational availability.
+            maintenance, lifesaving, and applied engineering, supporting
+            offshore and onshore projects with a focus on safety, compliance,
+            and operational availability.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -182,11 +182,12 @@ export default function HomePage() {
 
           <p className="text-[16px] leading-relaxed text-slate-600">
             Our operations are supported by certifications and recognitions that
-            reinforce our commitment to quality, compliance, and safety across
-            all service stages.
+            reinforce our commitment to quality, compliance, and safety at every
+            stage of our services.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {/* ISO */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
                 <Image
@@ -199,12 +200,14 @@ export default function HomePage() {
 
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">ISO 9001:2015</h3>
+
                 <p className="text-xs text-slate-500">
                   Quality Management System.
                 </p>
               </div>
             </div>
 
+            {/* DPC */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
                 <Image
@@ -217,12 +220,14 @@ export default function HomePage() {
 
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">
-                  Ports and Coasts Directorate
+                  Directorate of Ports and Coasts
                 </h3>
+
                 <p className="text-xs text-slate-500">Brazilian Navy.</p>
               </div>
             </div>
 
+            {/* CRALOG */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
                 <Image
@@ -235,12 +240,14 @@ export default function HomePage() {
 
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">CRALOG</h3>
+
                 <p className="text-xs text-slate-500">
-                  Lifesaving Certification.
+                  Survival Training Certification.
                 </p>
               </div>
             </div>
 
+            {/* DNV */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
                 <Image
@@ -253,10 +260,107 @@ export default function HomePage() {
 
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">DNV</h3>
+
                 <p className="text-xs text-slate-500">
                   Approved Service Supplier.
                 </p>
               </div>
+            </div>
+
+            {/* BV */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20 md:w-32 md:h-24">
+                <Image
+                  src="/img/cert-bv.png"
+                  alt="BV"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="space-y-1">
+                <h3 className="text-sm font-semibold">BV</h3>
+
+                <p className="text-xs text-slate-500">
+                  Bureau Veritas Certification.
+                </p>
+              </div>
+            </div>
+
+            {/* ABS */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20 md:w-32 md:h-24">
+                <Image
+                  src="/img/cert-abs.png"
+                  alt="ABS"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="space-y-1">
+                <h3 className="text-sm font-semibold">ABS</h3>
+
+                <p className="text-xs text-slate-500">
+                  American Bureau of Shipping.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FLAGS */}
+        <section className="space-y-6 pt-10">
+          <h2 className="text-[25px] font-semibold tracking-[0.1em] text-sky-700 uppercase">
+            Flags Served
+          </h2>
+
+          <p className="text-[16px] leading-relaxed text-slate-600">
+            We operate in compliance with vessels linked to the main
+            international maritime flags.
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {/* Bahamas */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20">
+                <Image
+                  src="/img/flag-bahamas.png"
+                  alt="Bahamas"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold">Bahamas</h3>
+            </div>
+
+            {/* Panama */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20">
+                <Image
+                  src="/img/flag-panama.png"
+                  alt="Panama"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold">Panama</h3>
+            </div>
+
+            {/* Liberia */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20">
+                <Image
+                  src="/img/flag-liberia.png"
+                  alt="Liberia"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold">Liberia</h3>
             </div>
           </div>
         </section>

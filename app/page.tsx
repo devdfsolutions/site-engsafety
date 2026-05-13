@@ -188,7 +188,8 @@ export default function HomePage() {
             em todas as etapas dos serviços prestados.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {" "}
             {/* ISO */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
@@ -206,7 +207,6 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-
             {/* DPC */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
@@ -224,7 +224,6 @@ export default function HomePage() {
                 <p className="text-xs text-slate-500">Marinha do Brasil.</p>
               </div>
             </div>
-
             {/* CRALOG */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
@@ -242,7 +241,6 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-
             {/* DNV */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
@@ -259,6 +257,99 @@ export default function HomePage() {
                   Approved Service Supplier.
                 </p>
               </div>
+            </div>
+            {/* BV */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20 md:w-32 md:h-24">
+                <Image
+                  src="/img/cert-bv.png"
+                  alt="BV"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="space-y-1">
+                <h3 className="text-sm font-semibold">BV</h3>
+
+                <p className="text-xs text-slate-500">
+                  Bureau Veritas Certification.
+                </p>
+              </div>
+            </div>
+            {/* ABS */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20 md:w-32 md:h-24">
+                <Image
+                  src="/img/cert-abs.png"
+                  alt="ABS"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="space-y-1">
+                <h3 className="text-sm font-semibold">ABS</h3>
+
+                <p className="text-xs text-slate-500">
+                  American Bureau of Shipping.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* BANDEIRAS */}
+        <section className="space-y-6 pt-10">
+          <h2 className="text-[25px] font-semibold tracking-[0.1em] text-sky-700 uppercase">
+            Bandeiras atendidas
+          </h2>
+
+          <p className="text-[16px] leading-relaxed text-slate-600">
+            Atuamos em conformidade com embarcações vinculadas às principais
+            bandeiras marítimas internacionais.
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {/* Bahamas */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20">
+                <Image
+                  src="/img/flag-bahamas.png"
+                  alt="Bahamas"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold">Bahamas</h3>
+            </div>
+
+            {/* Panamá */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20">
+                <Image
+                  src="/img/flag-panama.png"
+                  alt="Panamá"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold">Panamá</h3>
+            </div>
+
+            {/* Libéria */}
+            <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
+              <div className="relative w-28 h-20">
+                <Image
+                  src="/img/flag-liberia.png"
+                  alt="Libéria"
+                  fill
+                  className="object-contain transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold">Libéria</h3>
             </div>
           </div>
         </section>

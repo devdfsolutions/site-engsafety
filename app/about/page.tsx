@@ -59,7 +59,7 @@ export default function SobrePage() {
       {/* HERO */}
       <section className="relative w-full h-[320px] md:h-[420px] lg:h-[480px]">
         <Image
-          src="/img/sobre/fotosobre2.jpg"
+          src="/img/sobre/fotosobre2a.jpg"
           alt="ENGSAFETY offshore operation"
           fill
           priority
