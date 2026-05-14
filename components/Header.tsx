@@ -13,86 +13,131 @@ type NavItem = {
   children?: { label: string; href: string }[];
 };
 
-/**
- * MENU ORDER:
- * Home, Services, Rental, MRO Solutions, Contact, About us
- */
-
 /* ==============================
-   Language route mapping (PT <-> EN)
-   ============================== */
+   Language route mapping
+============================== */
 const ROUTE_PAIRS: Record<string, string> = {
-  // Main pages
+  // BR <-> EN
   "/": "/home",
   "/home": "/",
+
   "/sobre": "/about",
   "/about": "/sobre",
+
   "/contato": "/contact",
   "/contact": "/contato",
+
   "/locacao": "/rental",
   "/rental": "/locacao",
+
   "/solucoes-em-mro": "/mroen",
   "/mroen": "/solucoes-em-mro",
+
   "/servicos": "/services",
   "/services": "/servicos",
 
-  // Services children
-  "/servicos/lsa-salvatagem": "/services/salvatagemen",
-  "/services/salvatagemen": "/servicos/lsa-salvatagem",
+  "/servicos/lsa-salvatagem":
+    "/services/salvatagemen",
 
-  "/servicos/testes-de-carga": "/services/load-testing",
-  "/services/load-testing": "/servicos/testes-de-carga",
+  "/services/salvatagemen":
+    "/servicos/lsa-salvatagem",
 
-  "/servicos/inspecoes-engenharia": "/services/engenhariaen",
-  "/services/engenhariaen": "/servicos/inspecoes-engenharia",
+  "/servicos/testes-de-carga":
+    "/services/load-testing",
+
+  "/services/load-testing":
+    "/servicos/testes-de-carga",
+
+  "/servicos/inspecoes-engenharia":
+    "/services/engenhariaen",
+
+  "/services/engenhariaen":
+    "/servicos/inspecoes-engenharia",
+
+  // PT PORTUGAL
+  "/iniciopt": "/",
+  "/sobrept": "/sobre",
+  "/contatopt": "/contato",
+  "/locacaopt": "/locacao",
+  "/mropt": "/solucoes-em-mro",
+  "/servicospt": "/servicos",
+
+  "/servicos/lsa-salvatagempt":
+    "/servicos/lsa-salvatagem",
+
+  "/servicos/testes-de-cargapt":
+    "/servicos/testes-de-carga",
+
+  "/servicos/inspecoes-engenhariapt":
+    "/servicos/inspecoes-engenharia",
+
+  // ESPANHOL
+  "/inicioes": "/",
+  "/sobrees": "/sobre",
+  "/contatoes": "/contato",
+  "/locacaoes": "/locacao",
+  "/mroes": "/solucoes-em-mro",
+  "/servicoses": "/servicos",
+
+  "/servicos/lsa-salvatagemes":
+    "/servicos/lsa-salvatagem",
+
+  "/servicos/testes-de-cargaes":
+    "/servicos/testes-de-carga",
+
+  "/servicos/inspecoes-engenhariaes":
+    "/servicos/inspecoes-engenharia",
 };
 
-function isEnglishPath(pathname: string) {
-  return (
+function getLanguage(pathname: string) {
+  // ENGLISH
+  if (
     pathname === "/home" ||
     pathname === "/about" ||
     pathname === "/contact" ||
     pathname === "/rental" ||
     pathname === "/mroen" ||
     pathname === "/services" ||
-    pathname.startsWith("/about/") ||
-    pathname.startsWith("/contact/") ||
-    pathname.startsWith("/rental/") ||
-    pathname.startsWith("/mroen/") ||
     pathname.startsWith("/services/")
-  );
-}
-
-function getLanguagePairPath(pathname: string) {
-  // 1) Exact match
-  if (ROUTE_PAIRS[pathname]) return ROUTE_PAIRS[pathname];
-
-  // 2) Basic nested fallback (only useful if you later mirror slugs)
-  if (pathname.startsWith("/servicos/")) {
-    const rest = pathname.replace("/servicos", "");
-    return `/services${rest}`;
-  }
-  if (pathname.startsWith("/services/")) {
-    const rest = pathname.replace("/services", "");
-    return `/servicos${rest}`;
+  ) {
+    return "en";
   }
 
-  // 3) No mapping found: fallback to home of the other language
-  return isEnglishPath(pathname) ? "/" : "/home";
+  // PORTUGAL
+  if (pathname.includes("pt")) {
+    return "pt";
+  }
+
+  // ESPANHOL
+  if (pathname.includes("es")) {
+    return "es";
+  }
+
+  // BR
+  return "br";
 }
 
 /* ==============================
-   NAV ITEMS (PT + EN)
-   ============================== */
+   NAV ITEMS BR
+============================== */
 const navItemsPT: NavItem[] = [
   { label: "Início", href: "/" },
   {
     label: "Serviços",
     href: "/servicos",
     children: [
-      { label: "LSA / Salvatagem", href: "/servicos/lsa-salvatagem" },
-      { label: "Testes de carga", href: "/servicos/testes-de-carga" },
-      { label: "Inspeções", href: "/servicos/inspecoes-engenharia" },
+      {
+        label: "LSA / Salvatagem",
+        href: "/servicos/lsa-salvatagem",
+      },
+      {
+        label: "Testes de carga",
+        href: "/servicos/testes-de-carga",
+      },
+      {
+        label: "Inspeções",
+        href: "/servicos/inspecoes-engenharia",
+      },
     ],
   },
   { label: "Locação", href: "/locacao" },
@@ -101,15 +146,27 @@ const navItemsPT: NavItem[] = [
   { label: "Sobre nós", href: "/sobre" },
 ];
 
+/* ==============================
+   NAV ITEMS EN
+============================== */
 const navItemsEN: NavItem[] = [
   { label: "Home", href: "/home" },
   {
     label: "Services",
     href: "/services",
     children: [
-      { label: "LSA / Lifesaving", href: "/services/salvatagemen" },
-      { label: "Load testing", href: "/services/load-testing" },
-      { label: "Inspections", href: "/services/engenhariaen" },
+      {
+        label: "LSA / Lifesaving",
+        href: "/services/salvatagemen",
+      },
+      {
+        label: "Load testing",
+        href: "/services/load-testing",
+      },
+      {
+        label: "Inspections",
+        href: "/services/engenhariaen",
+      },
     ],
   },
   { label: "Rental", href: "/rental" },
@@ -118,41 +175,124 @@ const navItemsEN: NavItem[] = [
   { label: "About us", href: "/about" },
 ];
 
+/* ==============================
+   NAV ITEMS PORTUGAL
+============================== */
+const navItemsPortugal: NavItem[] = [
+  { label: "Início", href: "/iniciopt" },
+  {
+    label: "Serviços",
+    href: "/servicospt",
+    children: [
+      {
+        label: "LSA / Salvamento",
+        href: "/servicos/lsa-salvatagempt",
+      },
+      {
+        label: "Testes de carga",
+        href: "/servicos/testes-de-cargapt",
+      },
+      {
+        label: "Inspeções",
+        href: "/servicos/inspecoes-engenhariapt",
+      },
+    ],
+  },
+  { label: "Locação", href: "/locacaopt" },
+  { label: "Soluções em MRO", href: "/mropt" },
+  { label: "Contato", href: "/contatopt" },
+  { label: "Sobre nós", href: "/sobrept" },
+];
+
+/* ==============================
+   NAV ITEMS ES
+============================== */
+const navItemsES: NavItem[] = [
+  { label: "Inicio", href: "/inicioes" },
+  {
+    label: "Servicios",
+    href: "/servicoses",
+    children: [
+      {
+        label: "LSA / Salvamento",
+        href: "/servicos/lsa-salvatagemes",
+      },
+      {
+        label: "Pruebas de carga",
+        href: "/servicos/testes-de-cargaes",
+      },
+      {
+        label: "Inspecciones",
+        href: "/servicos/inspecoes-engenhariaes",
+      },
+    ],
+  },
+  { label: "Alquiler", href: "/locacaoes" },
+  { label: "Soluciones MRO", href: "/mroes" },
+  { label: "Contacto", href: "/contatoes" },
+  { label: "Sobre nosotros", href: "/sobrees" },
+];
+
 export default function Header() {
   const pathname = usePathname();
+
   const [open, setOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-  const servicesTimeout = useRef<number | null>(null);
+  const [servicesOpen, setServicesOpen] =
+    useState(false);
 
-  const isEN = isEnglishPath(pathname);
-  const langHref = getLanguagePairPath(pathname);
+  const servicesTimeout =
+    useRef<number | null>(null);
 
-  const navItems = isEN ? navItemsEN : navItemsPT;
+  const language = getLanguage(pathname);
+
+  const isEN = language === "en";
+  const isPT = language === "pt";
+  const isES = language === "es";
+  const isBR = language === "br";
+
+  const navItems = isEN
+    ? navItemsEN
+    : isPT
+    ? navItemsPortugal
+    : isES
+    ? navItemsES
+    : navItemsPT;
 
   const isActive = (href: string) =>
     href === "/"
       ? pathname === "/"
-      : pathname === href || pathname?.startsWith(href + "/");
+      : pathname === href ||
+        pathname?.startsWith(href + "/");
 
   const handleServicesEnter = () => {
     if (servicesTimeout.current) {
-      window.clearTimeout(servicesTimeout.current);
+      window.clearTimeout(
+        servicesTimeout.current
+      );
+
       servicesTimeout.current = null;
     }
+
     setServicesOpen(true);
   };
 
   const handleServicesLeave = () => {
-    servicesTimeout.current = window.setTimeout(() => {
-      setServicesOpen(false);
-    }, 150);
+    servicesTimeout.current =
+      window.setTimeout(() => {
+        setServicesOpen(false);
+      }, 150);
   };
 
-  const customerAreaLabel = isEN ? "Customer area" : "Área do cliente";
-  const whatsappLabel = isEN ? "Chat on WhatsApp" : "Falar no WhatsApp";
+  const whatsappLabel = isEN
+    ? "Chat on WhatsApp"
+    : isES
+    ? "Hablar por WhatsApp"
+    : "Falar no WhatsApp";
 
   const whatsappHref = isEN
     ? "https://api.whatsapp.com/send/?phone=5521986560236&text=Hello%21+I+found+your+company+on+Google+and+I%27d+like+to+learn+more+about+your+services.&type=phone_number&app_absent=0"
+    : isES
+    ? "https://api.whatsapp.com/send/?phone=5521986560236&text=Hola%21+Encontr%C3%A9+su+empresa+en+Google+y+me+gustar%C3%ADa+conocer+mejor+sus+servicios.&type=phone_number&app_absent=0"
     : "https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%21+Encontrei+a+empresa+de+voc%C3%AAs+no+Google+e+tenho+interesse+em+conhecer+melhor+os+servi%C3%A7os.&type=phone_number&app_absent=0";
 
   return (
@@ -160,12 +300,20 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-5 md:px-8 py-3 flex items-center justify-between gap-5">
         {/* LOGO */}
         <Link
-          href={isEN ? "/home" : "/"}
+          href={
+            isEN
+              ? "/home"
+              : isPT
+              ? "/iniciopt"
+              : isES
+              ? "/inicioes"
+              : "/"
+          }
           className="flex items-center shrink-0"
         >
           <div className="relative w-48 h-14 md:w-60 md:h-16">
             <Image
-              src="/img/eng/logos/logo-eng-big.png"
+              src="/img/eng/logos/eu.png"
               alt="EngSafety"
               fill
               className="object-contain"
@@ -177,14 +325,20 @@ export default function Header() {
         {/* NAV DESKTOP */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1c2743]">
           {navItems.map((item) => {
-            // ITEM WITH DROPDOWN (SERVICES)
-            if (item.children && item.children.length > 0) {
+            if (
+              item.children &&
+              item.children.length > 0
+            ) {
               return (
                 <div
                   key={item.label}
                   className="relative"
-                  onMouseEnter={handleServicesEnter}
-                  onMouseLeave={handleServicesLeave}
+                  onMouseEnter={
+                    handleServicesEnter
+                  }
+                  onMouseLeave={
+                    handleServicesLeave
+                  }
                 >
                   <Link
                     href={item.href}
@@ -195,7 +349,10 @@ export default function Header() {
                     }`}
                   >
                     {item.label}
-                    <span className="text-[10px] leading-none">▼</span>
+
+                    <span className="text-[10px] leading-none">
+                      ▼
+                    </span>
                   </Link>
 
                   {/* DROPDOWN */}
@@ -206,25 +363,28 @@ export default function Header() {
                         : "opacity-0 translate-y-1 pointer-events-none"
                     }`}
                   >
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className={`block px-4 py-2 text-sm leading-tight transition-colors ${
-                          isActive(child.href)
-                            ? "bg-slate-100 text-sky-700"
-                            : "text-slate-700 hover:bg-slate-100 hover:text-sky-700"
-                        }`}
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                    {item.children.map(
+                      (child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className={`block px-4 py-2 text-sm leading-tight transition-colors ${
+                            isActive(
+                              child.href
+                            )
+                              ? "bg-slate-100 text-sky-700"
+                              : "text-slate-700 hover:bg-slate-100 hover:text-sky-700"
+                          }`}
+                        >
+                          {child.label}
+                        </Link>
+                      )
+                    )}
                   </div>
                 </div>
               );
             }
 
-            // NORMAL ITEM
             return (
               <Link
                 key={item.href}
@@ -241,54 +401,98 @@ export default function Header() {
           })}
         </nav>
 
-        {/* RIGHT ICONS (DESKTOP) */}
-        <div className="hidden md:flex items-center gap-3">
-          {/* Language toggle */}
-          <Link
-            href={langHref}
-            className="inline-flex h-9 items-center justify-center rounded-full border border-slate-200 px-4 text-xs font-semibold text-[#1c2743] shadow-sm hover:border-sky-400 hover:text-sky-700 transition-colors"
-            aria-label={isEN ? "Switch to Portuguese" : "Switch to English"}
-          >
-            {isEN ? "PT" : "EN"}
-          </Link>
-
-          {/* Customer area */}
-          <a
-            href="https://delta.relatorio.app/index.php?class=LoginForm"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-500 text-white shadow-sm hover:bg-sky-600 transition-colors"
-          >
-            <span className="sr-only">{customerAreaLabel}</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-7 w-7"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              strokeWidth="1.8"
+        {/* RIGHT ICONS */}
+        <div className="hidden md:flex items-center gap-4">
+          {/* FLAGS */}
+          <div className="flex items-center gap-3">
+            {/* BR */}
+            <Link
+              href="/"
+              className={`transition-all hover:scale-110 ${
+                isBR
+                  ? "opacity-100"
+                  : "opacity-50"
+              }`}
+              title="Português Brasil"
             >
-              <path
-                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4Z"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+              <Image
+                src="/img/flags/br.png"
+                alt="Português Brasil"
+                width={24}
+                height={24}
+                className="rounded-full border border-slate-200 shadow-sm"
               />
-              <path
-                d="M5 20.25C6.5 18.5 9 17 12 17s5.5 1.5 7 3.25"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
+            </Link>
 
-          {/* WhatsApp */}
+            {/* EN */}
+            <Link
+              href="/home"
+              className={`transition-all hover:scale-110 ${
+                isEN
+                  ? "opacity-100"
+                  : "opacity-50"
+              }`}
+              title="English"
+            >
+              <Image
+                src="/img/flags/eu.png"
+                alt="English"
+                width={24}
+                height={24}
+                className="rounded-full border border-slate-200 shadow-sm"
+              />
+            </Link>
+
+            {/* PT */}
+            <Link
+              href="/iniciopt"
+              className={`transition-all hover:scale-110 ${
+                isPT
+                  ? "opacity-100"
+                  : "opacity-50"
+              }`}
+              title="Português Portugal"
+            >
+              <Image
+                src="/img/flags/pt.png"
+                alt="Português Portugal"
+                width={24}
+                height={24}
+                className="rounded-full border border-slate-200 shadow-sm"
+              />
+            </Link>
+
+            {/* ES */}
+            <Link
+              href="/inicioes"
+              className={`transition-all hover:scale-110 ${
+                isES
+                  ? "opacity-100"
+                  : "opacity-50"
+              }`}
+              title="Español"
+            >
+              <Image
+                src="/img/flags/es.png"
+                alt="Español"
+                width={24}
+                height={24}
+                className="rounded-full border border-slate-200 shadow-sm"
+              />
+            </Link>
+          </div>
+
+          {/* WHATSAPP */}
           <a
             href={whatsappHref}
             target="_blank"
             rel="noreferrer"
             className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#25D366] shadow-sm hover:bg-[#1ebe5d] transition-colors"
           >
-            <span className="sr-only">{whatsappLabel}</span>
+            <span className="sr-only">
+              {whatsappLabel}
+            </span>
+
             <div className="relative w-9 h-9">
               <Image
                 src="/img/whatsapp.png"
@@ -303,9 +507,16 @@ export default function Header() {
         {/* MOBILE BUTTON */}
         <button
           className="md:hidden inline-flex items-center justify-center p-2 rounded border border-slate-300 text-slate-700"
-          onClick={() => setOpen((v) => !v)}
+          onClick={() =>
+            setOpen((v) => !v)
+          }
         >
-          <span className="sr-only">{isEN ? "Open menu" : "Abrir menu"}</span>
+          <span className="sr-only">
+            {isEN
+              ? "Open menu"
+              : "Abrir menu"}
+          </span>
+
           <div className="space-y-1">
             <span className="block w-5 h-[2px] bg-slate-800" />
             <span className="block w-5 h-[2px] bg-slate-800" />
@@ -317,17 +528,78 @@ export default function Header() {
       {open && (
         <div className="md:hidden border-t border-slate-200 bg-white">
           <nav className="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
-            {/* Language toggle (mobile) */}
-            <Link
-              href={langHref}
-              className="mb-2 text-xs px-3 py-2 rounded-lg border border-slate-200 text-[#1c2743] text-center font-semibold"
-              onClick={() => setOpen(false)}
-            >
-              {isEN ? "Português (PT)" : "English (EN)"}
-            </Link>
+            {/* FLAGS MOBILE */}
+            <div className="flex items-center justify-center gap-4 mb-3">
+              {/* BR */}
+              <Link
+                href="/"
+                onClick={() =>
+                  setOpen(false)
+                }
+              >
+                <Image
+                  src="/img/flags/br.png"
+                  alt="BR"
+                  width={26}
+                  height={26}
+                  className="rounded-full border border-slate-200 shadow-sm"
+                />
+              </Link>
+
+              {/* EN */}
+              <Link
+                href="/home"
+                onClick={() =>
+                  setOpen(false)
+                }
+              >
+                <Image
+                  src="/img/flags/eu.png"
+                  alt="EN"
+                  width={26}
+                  height={26}
+                  className="rounded-full border border-slate-200 shadow-sm"
+                />
+              </Link>
+
+              {/* PT */}
+              <Link
+                href="/iniciopt"
+                onClick={() =>
+                  setOpen(false)
+                }
+              >
+                <Image
+                  src="/img/flags/pt.png"
+                  alt="PT"
+                  width={26}
+                  height={26}
+                  className="rounded-full border border-slate-200 shadow-sm"
+                />
+              </Link>
+
+              {/* ES */}
+              <Link
+                href="/inicioes"
+                onClick={() =>
+                  setOpen(false)
+                }
+              >
+                <Image
+                  src="/img/flags/es.png"
+                  alt="ES"
+                  width={26}
+                  height={26}
+                  className="rounded-full border border-slate-200 shadow-sm"
+                />
+              </Link>
+            </div>
 
             {navItems.map((item) => (
-              <div key={item.label} className="flex flex-col gap-1">
+              <div
+                key={item.label}
+                className="flex flex-col gap-1"
+              >
                 <Link
                   href={item.href}
                   className={`transition-colors ${
@@ -335,27 +607,35 @@ export default function Header() {
                       ? "text-sky-600"
                       : "text-[#1c2743] hover:text-sky-600"
                   }`}
-                  onClick={() => setOpen(false)}
+                  onClick={() =>
+                    setOpen(false)
+                  }
                 >
                   {item.label}
                 </Link>
 
                 {item.children && (
                   <div className="ml-3 flex flex-col gap-1">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className={`text-xs transition-colors ${
-                          isActive(child.href)
-                            ? "text-sky-600"
-                            : "text-slate-600 hover:text-sky-600"
-                        }`}
-                        onClick={() => setOpen(false)}
-                      >
-                        • {child.label}
-                      </Link>
-                    ))}
+                    {item.children.map(
+                      (child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className={`text-xs transition-colors ${
+                            isActive(
+                              child.href
+                            )
+                              ? "text-sky-600"
+                              : "text-slate-600 hover:text-sky-600"
+                          }`}
+                          onClick={() =>
+                            setOpen(false)
+                          }
+                        >
+                          • {child.label}
+                        </Link>
+                      )
+                    )}
                   </div>
                 )}
               </div>
@@ -363,20 +643,13 @@ export default function Header() {
 
             <div className="mt-3 flex gap-3">
               <a
-                href="https://delta.relatorio.app/index.php?class=LoginForm"
-                target="_blank"
-                rel="noreferrer"
-                className="flex-1 text-xs px-3 py-2 rounded-lg border border-slate-200 text-[#1c2743] text-center font-medium"
-                onClick={() => setOpen(false)}
-              >
-                {customerAreaLabel}
-              </a>
-              <a
                 href={whatsappHref}
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 text-xs px-3 py-2 rounded-lg bg-[#25D366] text-white text-center font-semibold"
-                onClick={() => setOpen(false)}
+                onClick={() =>
+                  setOpen(false)
+                }
               >
                 WhatsApp
               </a>
