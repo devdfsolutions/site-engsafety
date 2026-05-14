@@ -311,7 +311,7 @@ export default function Header() {
           }
           className="flex items-center shrink-0"
         >
-          <div className="relative w-48 h-14 md:w-60 md:h-16">
+          <div className="relative w-56 h-16 md:w-72 md:h-20">
             <Image
               src="/img/eng/logos/logo-eng2inv.png"
               alt="EngSafety"
