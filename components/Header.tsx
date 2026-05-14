@@ -186,15 +186,15 @@ const navItemsPortugal: NavItem[] = [
     children: [
       {
         label: "LSA / Salvamento",
-        href: "/servicos/lsa-salvatagempt",
+        href: "/servicospt/lsa-salvatagempt",
       },
       {
         label: "Testes de carga",
-        href: "/servicos/testes-de-cargapt",
+        href: "/servicospt/testes-de-cargapt",
       },
       {
         label: "Inspeções",
-        href: "/servicos/inspecoes-engenhariapt",
+        href: "/servicospt/inspecoes-engenhariapt",
       },
     ],
   },
@@ -215,15 +215,15 @@ const navItemsES: NavItem[] = [
     children: [
       {
         label: "LSA / Salvamento",
-        href: "/servicos/lsa-salvatagemes",
+        href: "/servicoses/lsa-salvatagemes",
       },
       {
         label: "Pruebas de carga",
-        href: "/servicos/testes-de-cargaes",
+        href: "/servicoses/testes-de-cargaes",
       },
       {
         label: "Inspecciones",
-        href: "/servicos/inspecoes-engenhariaes",
+        href: "/servicoses/inspecoes-engenhariaes",
       },
     ],
   },
@@ -313,7 +313,7 @@ export default function Header() {
         >
           <div className="relative w-48 h-14 md:w-60 md:h-16">
             <Image
-              src="/img/eng/logos/logo-eng2inv.png"
+              src="/img/eng/logos/logo-eng-big.png"
               alt="EngSafety"
               fill
               className="object-contain"
