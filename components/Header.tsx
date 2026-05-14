@@ -313,7 +313,7 @@ export default function Header() {
         >
           <div className="relative w-48 h-14 md:w-60 md:h-16">
             <Image
-              src="/img/eng/logos/eu.png"
+              src="/img/eng/logos/logo-eng-2.png"
               alt="EngSafety"
               fill
               className="object-contain"
