@@ -1,14 +1,14 @@
-// app/contato/page.tsx
+// app/contatopt/page.tsx
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
-  title: "Contato | ENGSAFETY",
+  title: "Contacto | ENGSAFETY",
 };
 
 export default function ContatoPage() {
   const whatsappUrl =
-    "https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%2C+gostaria+de+falar+com+a+equipe+comercial.&type=phone_number&app_absent=0";
+    "https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%2C+gostaria+de+falar+com+a+equipa+comercial.&type=phone_number&app_absent=0";
 
   const mapsUrl =
     "https://www.google.com/maps?q=Rua+Uçá,+363,+Jardim+Guanabara,+Rio+de+Janeiro,+RJ,+21940-480&output=embed";
@@ -31,22 +31,23 @@ export default function ContatoPage() {
             </h1>
 
             <p className="text-sm md:text-base text-slate-600 leading-relaxed max-w-md">
-              Preencha o formulário ao lado ou fale diretamente pelos nossos
-              canais de atendimento. Nossa equipe comercial está pronta para
-              entender sua demanda e indicar a melhor solução em testes de
-              carga, locações, LSA e MRO.
+              Preencha o formulário ao lado ou fale directamente através dos
+              nossos canais de atendimento. A nossa equipa comercial está pronta
+              para compreender a sua necessidade e indicar a melhor solução em
+              ensaios de carga, alugueres, LSA e MRO.
             </p>
 
             <div className="space-y-2 text-sm text-slate-700">
               <p>
                 <span className="font-semibold text-[#1c2743]">E-mail:</span>{" "}
                 <Link
-                  href="/contato"
+                  href="/contatopt"
                   className="text-sky-600 hover:text-sky-700 underline underline-offset-2"
                 >
                   comercial@engsafety.ind.br
                 </Link>
               </p>
+
               <p>
                 <span className="font-semibold text-[#1c2743]">Telefone:</span>{" "}
                 <a
@@ -59,9 +60,10 @@ export default function ContatoPage() {
                 </a>{" "}
                 | (21) 99530-3032 | (21) 3491-5335
               </p>
+
               <p>
-                <span className="font-semibold text-[#1c2743]">Endereço:</span>{" "}
-                Rua Uçá, 363 – Jardim Guanabara, Rio de Janeiro – RJ – RJ
+                <span className="font-semibold text-[#1c2743]">Morada:</span>{" "}
+                Rua Uçá, 363 – Jardim Guanabara, Rio de Janeiro – RJ
               </p>
             </div>
           </div>
@@ -72,7 +74,7 @@ export default function ContatoPage() {
       </section>
 
       {/* =====================================================
-          MAPA + ENDEREÇO
+          MAPA + MORADA
       ====================================================== */}
       <section className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 md:px-6 space-y-6">
@@ -80,6 +82,7 @@ export default function ContatoPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-[#1c2743]">
               Onde estamos
             </h2>
+
             <p className="text-sm md:text-base text-slate-600 max-w-2xl">
               Rua Uçá, 363 – Jardim Guanabara – CEP 21940-480 – Rio de Janeiro –
               RJ.
@@ -98,7 +101,7 @@ export default function ContatoPage() {
       </section>
 
       {/* =====================================================
-          BLOCO FINAL – INFORMAÇÕES DE CONTATO (CLICÁVEIS)
+          BLOCO FINAL – INFORMAÇÕES DE CONTACTO (CLICÁVEIS)
       ====================================================== */}
       <section className="bg-slate-50 py-14 md:py-16 border-t border-slate-200">
         <div className="max-w-5xl mx-auto px-4 md:px-6 text-center space-y-10">
@@ -106,19 +109,21 @@ export default function ContatoPage() {
             <p className="text-xs font-semibold tracking-[0.25em] text-sky-600 uppercase">
               ENGSAFETY Soluções e Engenharia
             </p>
+
             <h2 className="text-2xl md:text-3xl font-bold text-[#1c2743]">
-              Informações de Contato
+              Informações de Contacto
             </h2>
+
             <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto">
-              Clique em um dos canais abaixo para falar diretamente com nossa
-              equipe comercial.
+              Clique num dos canais abaixo para falar directamente com a nossa
+              equipa comercial.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-10 text-sm text-slate-700">
-            {/* Email -> vai para /contato (já está nela, mas mantém o padrão) */}
+            {/* Email -> vai para /contatopt */}
             <Link
-              href="/contato"
+              href="/contatopt"
               className="group space-y-2 rounded-xl border border-slate-200 bg-white px-5 py-5 shadow-sm hover:shadow-md hover:border-sky-400 transition-all"
             >
               <div className="flex justify-center mb-2">
@@ -126,10 +131,13 @@ export default function ContatoPage() {
                   ✉
                 </span>
               </div>
+
               <h3 className="font-semibold text-[#1c2743]">Email Comercial</h3>
+
               <p className="text-sky-600 font-medium">
                 comercial@engsafety.ind.br
               </p>
+
               <p className="text-[11px] uppercase tracking-[0.16em] text-slate-400">
                 Clique para abrir o formulário
               </p>
@@ -147,16 +155,19 @@ export default function ContatoPage() {
                   ☎
                 </span>
               </div>
+
               <h3 className="font-semibold text-[#1c2743]">Telefone</h3>
+
               <p>(21) 98656-0236 (24 horas)</p>
               <p>(21) 99530-3032</p>
               <p>(21) 3491-5335</p>
+
               <p className="text-[11px] uppercase tracking-[0.16em] text-slate-400">
-                Clique para falar no WhatsApp
+                Clique para falar pelo WhatsApp
               </p>
             </a>
 
-            {/* Endereço -> também manda para /contato (pode virar link de mapa se quiser) */}
+            {/* Morada -> Google Maps */}
             <a
               href="https://www.google.com/maps/search/?api=1&query=Rua+Uçá,+363,+Jardim+Guanabara,+Rio+de+Janeiro,+RJ"
               target="_blank"
@@ -168,10 +179,13 @@ export default function ContatoPage() {
                   📍
                 </span>
               </div>
+
               <h3 className="font-semibold text-[#1c2743]">Base ENGSAFETY</h3>
+
               <p>Rua Uçá, 363</p>
               <p>Jardim Guanabara</p>
               <p>Rio de Janeiro – RJ</p>
+
               <p className="text-[11px] uppercase tracking-[0.16em] text-slate-400">
                 Clique para abrir no mapa
               </p>

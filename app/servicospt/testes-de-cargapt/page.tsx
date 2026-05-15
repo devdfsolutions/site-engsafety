@@ -1,3 +1,4 @@
+// app/servicospt/testes-de-cargapt/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -14,13 +15,13 @@ export default function TestesDeCargaPage() {
           {/* IMAGEM DE FUNDO */}
           <Image
             src="/img/servicos/teste-carga/herocarga1.png"
-            alt="Teste de carga com bolsas d'água"
+            alt="Ensaio de carga com bolsas de água"
             fill
             priority
             className="object-cover"
           />
 
-          {/* OVERLAY SUAVE (normal) */}
+          {/* OVERLAY SUAVE */}
           <div className="absolute inset-0 bg-black/25 transition-colors duration-300 group-hover:bg-black/55" />
 
           {/* CONTEÚDO QUE APARECE NO HOVER */}
@@ -34,7 +35,7 @@ export default function TestesDeCargaPage() {
                 group-hover:scale-[1.02]
               "
             >
-              Testes de carga
+              Ensaios de carga
             </h1>
 
             <p
@@ -45,14 +46,14 @@ export default function TestesDeCargaPage() {
                 group-hover:opacity-100
               "
             >
-              Garantimos segurança e confiabilidade nas operações de elevação e
-              içamento, com testes de carga executados conforme normas
+              Garantimos segurança e fiabilidade nas operações de elevação e
+              içamento, com ensaios de carga executados conforme normas
               internacionais.
             </p>
 
             {/* BOTÃO WHATSAPP – SÓ FICA 100% VISÍVEL NO HOVER */}
             <a
-              href="https://api.whatsapp.com/send/?phone=5521986560236&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%21+Tenho+interesse+em+solicitar+um+or%C3%A7amento+para+ensaios+de+carga+da+ENGSAFETY.&type=phone_number&app_absent=0"
               target="_blank"
               rel="noreferrer"
               className="
@@ -78,7 +79,9 @@ export default function TestesDeCargaPage() {
       ====================================== */}
       <section
         className="relative py-16 md:py-20 px-6 md:px-10 bg-cover bg-center"
-        style={{ backgroundImage: "url('/img/servicos/teste-carga/fundoblur.png')" }}
+        style={{
+          backgroundImage: "url('/img/servicos/teste-carga/fundoblur.png')",
+        }}
       >
         {/* overlay clarinho */}
         <div className="absolute inset-0 bg-white/85 backdrop-blur-sm" />
@@ -89,31 +92,34 @@ export default function TestesDeCargaPage() {
             <div className="relative h-40 md:h-48 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/cargas1.png"
-                alt="Teste de carga com bolsas d'água"
+                alt="Ensaio de carga com bolsas de água"
                 fill
                 className="object-cover"
               />
             </div>
+
             <div className="relative h-40 md:h-48 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/cargas2.png"
-                alt="Operação de teste de carga"
+                alt="Operação de ensaio de carga"
                 fill
                 className="object-cover"
               />
             </div>
+
             <div className="relative h-40 md:h-48 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/cargas3.png"
-                alt="Equipe em operação de teste de carga"
+                alt="Equipa em operação de ensaio de carga"
                 fill
                 className="object-cover"
               />
             </div>
+
             <div className="relative h-40 md:h-48 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/cargas4.png"
-                alt="Bolsas de teste de carga em operação"
+                alt="Bolsas de ensaio de carga em operação"
                 fill
                 className="object-cover"
               />
@@ -122,31 +128,29 @@ export default function TestesDeCargaPage() {
 
           {/* TEXTO PRINCIPAL */}
           <div className="space-y-4 md:space-y-6">
-            {/* aqui você mexe no tamanho da fonte / espaçamento */}
             <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-sky-600 uppercase">
               ENGSAFETY Soluções e Engenharia
             </p>
 
             <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#1c2743] leading-tight">
-              Equipamentos de teste de carga.
+              Equipamentos para ensaios de carga.
             </h2>
 
             <p className="text-base md:text-lg text-slate-700 leading-relaxed">
-              O teste de carga é essencial para garantir a segurança da
-              operação, confirmando o peso máximo que o equipamento suporta e
-              evitando acidentes, danos estruturais e paradas não planejadas.
+              O ensaio de carga é essencial para garantir a segurança da
+              operação, confirmando o peso máximo suportado pelo equipamento e
+              evitando acidentes, danos estruturais e paragens não planeadas.
             </p>
 
             <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-              Atuamos com bolsas d&apos;água, pesos sólidos, medições
-              instrumentadas e emissão de relatórios e certificados conforme
+              Atuamos com bolsas de água, pesos sólidos, medições
+              instrumentadas e emissão de relatórios e certificados conforme os
               requisitos de sociedades classificadoras, bandeiras e ROs.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              
               <a
-                href="https://api.whatsapp.com/send/?phone=5521986560236&text&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%21+Tenho+interesse+em+solicitar+um+or%C3%A7amento+para+ensaios+de+carga+da+ENGSAFETY.&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-sky-600 text-sky-700 text-sm md:text-base font-semibold hover:bg-sky-50 transition-colors"
@@ -159,13 +163,15 @@ export default function TestesDeCargaPage() {
       </section>
 
       {/* =====================================
-          NOSSOS SERVIÇOS – GRID SUPERIOR
+          OS NOSSOS SERVIÇOS – GRID SUPERIOR
       ====================================== */}
       <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-20">
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-[#1c2743]">Nossos serviços</h2>
+          <h2 className="text-4xl font-bold text-[#1c2743]">
+            Os nossos serviços
+          </h2>
           <p className="text-slate-500 mt-2 text-base md:text-lg">
-            Testes de carga em equipamentos.
+            Ensaios de carga em equipamentos.
           </p>
         </div>
 
@@ -176,16 +182,16 @@ export default function TestesDeCargaPage() {
             <div className="relative w-full h-56 mb-4 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/buricasheliporto.png"
-                alt="Teste de carga em búricas de helipontos"
+                alt="Ensaio de carga em pontos de helipontos"
                 fill
                 className="object-cover"
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Búricas de Helipontos
+              Pontos de Helipontos
             </h3>
             <p className="text-slate-600 text-sm mt-2">
-              Testes de carga em búricas de helipontos com equipamentos de alta
+              Ensaios de carga em pontos de helipontos com equipamentos de alta
               precisão, garantindo a capacidade de suporte e a segurança das
               operações aéreas.
             </p>
@@ -196,7 +202,7 @@ export default function TestesDeCargaPage() {
             <div className="relative w-full h-56 mb-4 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/spreaderbars.png"
-                alt="Teste de carga em spreader bars"
+                alt="Ensaio de carga em spreader bars"
                 fill
                 className="object-cover"
               />
@@ -206,26 +212,25 @@ export default function TestesDeCargaPage() {
             </h3>
             <p className="text-slate-600 text-sm mt-2">
               Ensaios de carga em spreader bars e acessórios de içamento,
-              assegurando integridade e confiabilidade em operações de
-              elevação.
+              assegurando integridade e fiabilidade em operações de elevação.
             </p>
           </div>
 
-          {/* Guindastes, guinchos e graus */}
+          {/* Guindastes, guinchos e equipamentos de içamento */}
           <div className="text-center">
             <div className="relative w-full h-56 mb-4 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/guindasteguinchos.png"
-                alt="Teste de carga em guindastes e guinchos"
+                alt="Ensaio de carga em guindastes e guinchos"
                 fill
                 className="object-cover"
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Guindastes, guinchos e graus
+              Guindastes, Guinchos e Equipamentos de Içamento
             </h3>
             <p className="text-slate-600 text-sm mt-2">
-              Testes de carga em guindastes, guinchos e sistemas de elevação em
+              Ensaios de carga em guindastes, guinchos e sistemas de elevação em
               plataformas, navios e unidades onshore.
             </p>
           </div>
@@ -235,24 +240,24 @@ export default function TestesDeCargaPage() {
             <div className="relative w-full h-56 mb-4 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/testecargabaleeira.png"
-                alt="Teste de carga em baleeira"
+                alt="Ensaio de carga em bote salva-vidas"
                 fill
                 className="object-cover"
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Teste de Carga Baleeira
+              Ensaio de Carga em Bote Salva-Vidas
             </h3>
             <p className="text-slate-600 text-sm mt-2">
-              Testes de carga em baleeiras, verificando pontos de fixação,
-              turcos e sistemas de lançamento, conforme exigências das
-              autoridades marítimas.
+              Ensaios de carga em botes salva-vidas, verificando pontos de
+              fixação, turcos e sistemas de lançamento, conforme as exigências
+              das autoridades marítimas.
             </p>
           </div>
         </div>
 
         {/* =====================================
-            NOSSOS SERVIÇOS – GRID INFERIOR
+            OS NOSSOS SERVIÇOS – GRID INFERIOR
         ====================================== */}
         <div className="grid md:grid-cols-4 gap-10">
           {/* Teste de carga em olhais */}
@@ -260,16 +265,16 @@ export default function TestesDeCargaPage() {
             <div className="relative w-full h-56 mb-4 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/cargaemolhais1.png"
-                alt="Teste de carga em olhais"
+                alt="Ensaio de carga em olhais"
                 fill
                 className="object-cover"
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Teste de Carga em Olhais
+              Ensaio de Carga em Olhais
             </h3>
             <p className="text-slate-600 text-sm mt-2">
-              Testes de carga em olhais, pontos de ancoragem e dispositivos de
+              Ensaios de carga em olhais, pontos de ancoragem e dispositivos de
               fixação, com emissão de relatórios e certificados.
             </p>
           </div>
@@ -288,7 +293,7 @@ export default function TestesDeCargaPage() {
               Bollard Pull Test
             </h3>
             <p className="text-slate-600 text-sm mt-2">
-              Teste de força de puxada em embarcações, avaliando a capacidade
+              Ensaio de força de tração em embarcações, avaliando a capacidade
               máxima de tração para operações offshore e portuárias.
             </p>
           </div>
@@ -298,16 +303,16 @@ export default function TestesDeCargaPage() {
             <div className="relative w-full h-56 mb-4 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/testedecargaskid.png"
-                alt="Testes de carga em SKID"
+                alt="Ensaios de carga em SKID"
                 fill
                 className="object-cover"
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Testes de Carga em SKID
+              Ensaios de Carga em SKID
             </h3>
             <p className="text-slate-600 text-sm mt-2">
-              Testes estruturais em SKIDs e módulos, assegurando resistência,
+              Ensaios estruturais em SKIDs e módulos, assegurando resistência,
               integridade e adequação às condições de operação.
             </p>
           </div>
@@ -317,16 +322,16 @@ export default function TestesDeCargaPage() {
             <div className="relative w-full h-56 mb-4 rounded-xl overflow-hidden shadow-sm">
               <Image
                 src="/img/servicos/teste-carga/testeponterolante1.png"
-                alt="Teste de carga em ponte rolante"
+                alt="Ensaio de carga em ponte rolante"
                 fill
                 className="object-cover"
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Teste de Carga Ponte Rolante
+              Ensaio de Carga em Ponte Rolante
             </h3>
             <p className="text-slate-600 text-sm mt-2">
-              Teste de carga e verificação de dispositivos em pontes rolantes,
+              Ensaio de carga e verificação de dispositivos em pontes rolantes,
               garantindo capacidade nominal e segurança operacional.
             </p>
           </div>

@@ -1,4 +1,4 @@
-// app/sobre/page.tsx
+// app/sobrept/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -7,13 +7,13 @@ import { useEffect, useState } from "react";
 const carouselSlides = [
   {
     img: "/img/sobre/fotosobre3.jpg",
-    title: "Mulheres Liderando com Excelência",
-    text: "Profissionais que atuam com competência e determinação em um setor desafiador, essenciais para o sucesso das operações offshore da ENGSAFETY.",
+    title: "Mulheres a Liderar com Excelência",
+    text: "Profissionais que atuam com competência e determinação num setor desafiante, essenciais para o sucesso das operações offshore da ENGSAFETY.",
   },
   {
     img: "/img/sobre/fotosobre5.jpg",
-    title: "Trabalho em Equipe",
-    text: "Cada membro da equipe contribui para o sucesso de cada operação, dentro e fora do campo.",
+    title: "Trabalho em Equipa",
+    text: "Cada membro da equipa contribui para o sucesso de cada operação, dentro e fora do campo.",
   },
   {
     img: "/img/sobre/fotosobre6.jpg",
@@ -23,7 +23,7 @@ const carouselSlides = [
   {
     img: "/img/sobre/fotosobre4.jpg",
     title: "Excelência em Operações",
-    text: "Operações conduzidas com foco em segurança, eficiência e resultados consistentes para nossos clientes.",
+    text: "Operações conduzidas com foco em segurança, eficiência e resultados consistentes para os nossos clientes.",
   },
 ];
 
@@ -70,34 +70,34 @@ export default function SobrePage() {
             SOBRE NÓS
           </h1>
           <p className="mt-4 max-w-2xl text-sm md:text-base text-slate-100">
-            Eficiência é o nosso campo. Segurança, inovação e resultados
+            A eficiência é o nosso campo. Segurança, inovação e resultados
             consistentes em cada operação.
           </p>
         </div>
       </section>
 
-      {/* INTRO / NOSSOS COMPROMISSOS */}
+      {/* INTRO / OS NOSSOS COMPROMISSOS */}
       <section className="max-w-6xl mx-auto px-4 lg:px-0 py-12 md:py-16">
         <p className="text-xs font-semibold tracking-[0.25em] text-blue-700 uppercase mb-3">
           ENGSAFETY Soluções e Engenharia
         </p>
 
         <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-6">
-          Nossos compromissos.
+          Os nossos compromissos.
         </h2>
 
         <div className="space-y-4 text-slate-600 leading-relaxed max-w-3xl">
           <p>
-            Com uma equipe altamente qualificada e um compromisso inabalável com
+            Com uma equipa altamente qualificada e um compromisso inabalável com
             a segurança, inovação e sustentabilidade, a ENGSAFETY entrega
-            soluções completas em engenharia, manutenção, inspeções e testes de
+            soluções completas em engenharia, manutenção, inspeções e ensaios de
             carga para operações offshore e onshore em todo o território
             nacional.
           </p>
           <p>
             Atuamos de forma integrada em projetos críticos, garantindo
             disponibilidade operacional, conformidade com normas e resultados
-            que superam as expectativas de nossos clientes.
+            que superam as expectativas dos nossos clientes.
           </p>
         </div>
       </section>
@@ -112,12 +112,12 @@ export default function SobrePage() {
           },
           {
             title: "Soluções Personalizadas",
-            desc: "Desenvolvemos soluções sob medida, adaptadas às necessidades específicas de cada unidade, navio ou planta industrial.",
+            desc: "Desenvolvemos soluções à medida, adaptadas às necessidades específicas de cada unidade, navio ou instalação industrial.",
             icon: "📌",
           },
           {
             title: "Operações Sustentáveis e Seguras",
-            desc: "Nossos processos priorizam segurança das pessoas, preservação ambiental e conformidade com normas nacionais e internacionais.",
+            desc: "Os nossos processos priorizam a segurança das pessoas, a preservação ambiental e a conformidade com normas nacionais e internacionais.",
             icon: "🌱",
           },
         ].map((item) => (
@@ -135,8 +135,6 @@ export default function SobrePage() {
           </div>
         ))}
       </section>
-
-      
 
       {/* O QUE É IMPORTANTE PARA NÓS */}
       <section className="relative w-full overflow-hidden">
@@ -168,30 +166,30 @@ export default function SobrePage() {
         {/* Conteúdo */}
         <div className="bottom-2 relative max-w-6xl mx-auto px-4 lg:px-0 py-14 md:py-20 text-slate-50">
           <p className="text-xs font-semibold tracking-[0.25em] uppercase mb-3">
-            Services
+            Serviços
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-2">
             O que é importante para nós?
           </h2>
           <p className="text-base md:text-lg text-emerald-300 mb-8">
-            Juntos, construindo um futuro seguro.
+            Juntos, a construir um futuro seguro.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 title: "Redução de Custos",
-                desc: "Buscamos constantemente otimizar processos e adotar soluções inovadoras, reduzindo custos sem comprometer a qualidade.",
+                desc: "Procuramos constantemente otimizar processos e adotar soluções inovadoras, reduzindo custos sem comprometer a qualidade.",
                 icon: "/img/sobre/icons/dinheiro.png",
               },
               {
                 title: "Compromisso com o Futuro",
-                desc: "Garantimos segurança em nossas operações, preservando o meio ambiente e respeitando as comunidades onde atuamos.",
+                desc: "Garantimos segurança nas nossas operações, preservando o meio ambiente e respeitando as comunidades onde atuamos.",
                 icon: "/img/sobre/icons/mundo.png",
               },
               {
                 title: "Valorização das Pessoas",
-                desc: "Nossa equipe é nosso maior ativo. Investimos em desenvolvimento contínuo e em um ambiente que valoriza mérito e inovação.",
+                desc: "A nossa equipa é o nosso maior ativo. Investimos em desenvolvimento contínuo e num ambiente que valoriza mérito e inovação.",
                 icon: "/img/sobre/icons/humanos.png",
               },
             ].map((item) => (

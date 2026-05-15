@@ -1,4 +1,4 @@
-// app/servicos/inspecao/page.tsx
+// app/servicospt/inspecoes-engenhariapt/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -26,13 +26,14 @@ export default function InspecaoPage() {
         {/* Texto + botão */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-3xl md:text-4xl font-bold">INSPEÇÃO</h1>
+
           <p className="mt-2 text-sm md:text-base">
             Estamos comprometidos com a segurança da vida no mar.
           </p>
 
           {/* Botão WhatsApp visível somente no hover */}
           <Link
-            href="https://api.whatsapp.com/send/?phone=5521986560236&text&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%21+Tenho+interesse+nos+servi%C3%A7os+de+inspe%C3%A7%C3%A3o+da+ENGSAFETY.&type=phone_number&app_absent=0"
             className="opacity-0 group-hover:opacity-100 mt-6 px-8 py-3 rounded-full bg-sky-600 hover:bg-sky-700 transition-all text-white font-semibold shadow-lg"
           >
             Mensagem
@@ -62,24 +63,27 @@ export default function InspecaoPage() {
               height={400}
               className="rounded-xl object-cover shadow-md"
             />
+
             <Image
               src="/img/servicos/inspecoes/barcoinspec1.png"
-              alt="Inspeção Naval"
+              alt="Inspeção naval"
               width={600}
               height={400}
               className="rounded-xl object-cover shadow-md"
-              style={{height: "100%"}}
+              style={{ height: "100%" }}
             />
+
             <Image
               src="/img/servicos/inspecoes/inspec5.png"
-              alt="Equipe de inspeção"
+              alt="Equipa de inspeção"
               width={600}
               height={400}
               className="rounded-xl object-cover shadow-md"
             />
+
             <Image
               src="/img/servicos/inspecoes/inspec3.png"
-              alt="Operações Offshore"
+              alt="Operações offshore"
               width={600}
               height={400}
               className="rounded-xl object-cover shadow-md"
@@ -97,17 +101,17 @@ export default function InspecaoPage() {
             </h1>
 
             <p className="text-base md:text-lg text-slate-700 leading-relaxed">
-              Garantimos que cada equipamento atenda às normas técnicas e
-              padrões de segurança, assegurando desempenho ideal e
-              confiabilidade em operações onshore e offshore.
+              Garantimos que cada equipamento cumpra as normas técnicas e os
+              padrões de segurança, assegurando desempenho ideal e fiabilidade
+              em operações onshore e offshore.
             </p>
 
             <div>
               <Link
-                href="https://api.whatsapp.com/send/?phone=5521986560236&text&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%21+Tenho+interesse+nos+servi%C3%A7os+de+inspe%C3%A7%C3%A3o+da+ENGSAFETY.&type=phone_number&app_absent=0"
                 className="inline-flex items-center justify-center px-10 py-3 rounded-full bg-sky-600 text-white text-sm md:text-base font-semibold shadow-md hover:bg-sky-700 transition-colors"
               >
-                Entre em contato
+                Entre em contacto
               </Link>
             </div>
           </div>
@@ -119,7 +123,10 @@ export default function InspecaoPage() {
       =========================================== */}
       <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-20">
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-[#1c2743]">Nossos serviços</h2>
+          <h2 className="text-4xl font-bold text-[#1c2743]">
+            Os nossos serviços
+          </h2>
+
           <p className="text-slate-500 mt-2 text-base md:text-lg">
             Inspeção em Equipamentos:
           </p>
@@ -137,11 +144,14 @@ export default function InspecaoPage() {
                 className="rounded-xl object-cover"
               />
             </div>
+
             <h3 className="font-semibold text-lg text-[#1c2743]">
               Material de Içamento
             </h3>
+
             <p className="text-slate-600 text-sm mt-2">
-              Inspeção em materiais de içamento, incluindo cintas, cabos de aço, ganchos, manilhas e demais acessórios.
+              Inspeção em materiais de içamento, incluindo cintas, cabos de aço,
+              ganchos, manilhas e demais acessórios.
             </p>
           </div>
 
@@ -155,9 +165,12 @@ export default function InspecaoPage() {
                 className="rounded-xl object-cover"
               />
             </div>
+
             <h3 className="font-semibold text-lg text-[#1c2743]">Guindaste</h3>
+
             <p className="text-slate-600 text-sm mt-2">
-              Inspeções em guindastes, componentes mecânicos, estruturais e de segurança.
+              Inspeções em guindastes, componentes mecânicos, estruturais e de
+              segurança.
             </p>
           </div>
 
@@ -171,11 +184,14 @@ export default function InspecaoPage() {
                 className="rounded-xl object-cover"
               />
             </div>
+
             <h3 className="font-semibold text-lg text-[#1c2743]">
               Acesso por Corda
             </h3>
+
             <p className="text-slate-600 text-sm mt-2">
-              Inspeção com acesso por corda, para áreas de difícil acesso, como estruturas em altura e espaços confinados.
+              Inspeção com acesso por corda para áreas de difícil acesso, como
+              estruturas em altura e espaços confinados.
             </p>
           </div>
 
@@ -189,11 +205,15 @@ export default function InspecaoPage() {
                 className="rounded-xl object-cover"
               />
             </div>
+
             <h3 className="font-semibold text-lg text-[#1c2743]">
               Tugger Winches
             </h3>
+
             <p className="text-slate-600 text-sm mt-2">
-              inspeções em Tugger Winches, funcionalidade desses guinchos auxiliares essenciais para operações de movimentação e içamento de cargas..
+              Inspeções em Tugger Winches, verificando a funcionalidade destes
+              guinchos auxiliares essenciais para operações de movimentação e
+              içamento de cargas.
             </p>
           </div>
         </div>
@@ -207,16 +227,20 @@ export default function InspecaoPage() {
             <div className="relative w-full h-56 mb-4">
               <Image
                 src="/img/servicos/inspecoes/drone.png"
-                alt="ROV inspeção"
+                alt="Inspeção ROV"
                 fill
                 className="rounded-xl object-cover"
               />
             </div>
+
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              ROV (Veículos Operados Remotamente)
+              ROV Veículos Operados Remotamente
             </h3>
+
             <p className="text-slate-600 text-sm mt-2">
-              Ambientes subaquáticos de difícil acesso, como inspeções de estruturas submersas, plataformas, cascos de embarcações e tubulações.
+              Para ambientes subaquáticos de difícil acesso, como inspeções de
+              estruturas submersas, plataformas, cascos de embarcações e
+              tubagens.
             </p>
           </div>
 
@@ -230,11 +254,14 @@ export default function InspecaoPage() {
                 className="rounded-xl object-cover"
               />
             </div>
+
             <h3 className="font-semibold text-lg text-[#1c2743]">
               Torres Eólicas
             </h3>
+
             <p className="text-slate-600 text-sm mt-2">
-              Inspeções completas em torres eólicas, garantindo a integridade estrutural e o funcionamento seguro de todos os componentes.
+              Inspeções completas em torres eólicas, garantindo a integridade
+              estrutural e o funcionamento seguro de todos os componentes.
             </p>
           </div>
 
@@ -248,11 +275,15 @@ export default function InspecaoPage() {
                 className="rounded-xl object-cover"
               />
             </div>
+
             <h3 className="font-semibold text-lg text-[#1c2743]">
               Ensaios LP e END
             </h3>
+
             <p className="text-slate-600 text-sm mt-2">
-              Peças de reposição genuínas são fornecidas como parte de nossas muitas soluções prontas para uso.
+              Ensaios não destrutivos e líquidos penetrantes aplicados para
+              identificar descontinuidades, apoiar diagnósticos técnicos e
+              aumentar a fiabilidade dos equipamentos inspecionados.
             </p>
           </div>
 
@@ -266,11 +297,14 @@ export default function InspecaoPage() {
                 className="rounded-xl object-cover"
               />
             </div>
+
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Inspeção Drone
+              Inspeção com Drone
             </h3>
+
             <p className="text-slate-600 text-sm mt-2">
-              Inspeção com drones em estruturas e áreas de difícil acesso, como plataformas, torres eólicas, dutos e obras industriais.
+              Inspeção com drones em estruturas e áreas de difícil acesso, como
+              plataformas, torres eólicas, condutas e obras industriais.
             </p>
           </div>
         </div>

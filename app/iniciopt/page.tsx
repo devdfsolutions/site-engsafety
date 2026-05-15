@@ -1,4 +1,4 @@
-// app/page.tsx
+// app/iniciopt/page.tsx
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,24 +15,24 @@ export default function HomePage() {
 
   const services = [
     {
-      slug: "testes-de-carga",
-      title: "Testes de carga",
+      slug: "testes-de-cargapt",
+      title: "Ensaios de carga",
       description:
-        "Execução de testes de carga estáticos e dinâmicos com emissão de certificados conforme normas internacionais e requisitos de sociedades classificadoras.",
+        "Execução de ensaios de carga estáticos e dinâmicos com emissão de certificados em conformidade com normas internacionais e requisitos de sociedades classificadoras.",
       image: "/img/servicos/testes-carga.jpg",
     },
     {
-      slug: "lsa-salvatagem",
-      title: "LSA / Salvatagem",
+      slug: "lsa-salvatagempt",
+      title: "LSA / Salvamento",
       description:
-        "Manutenção e inspeção de embarcações de salvamento, guinchos, turcos, davits e equipamentos de vida, garantindo disponibilidade e segurança em emergências.",
+        "Manutenção e inspeção de embarcações de salvamento, guinchos, turcos, davits e equipamentos de sobrevivência, garantindo disponibilidade e segurança em situações de emergência.",
       image: "/img/servicos/lsa-salvatagem1.jpg",
     },
     {
-      slug: "inspecoes-engenharia",
+      slug: "inspecoes-engenhariapt",
       title: "Inspeções e engenharia",
       description:
-        "Inspeções técnicas, engenharia aplicada e suporte à integridade de ativos offshore e onshore, com relatórios e laudos completos.",
+        "Inspeções técnicas, engenharia aplicada e apoio à integridade de ativos offshore e onshore, com relatórios técnicos e documentação completa.",
       image: "/img/servicos/inspecoes-engenharia.jpg",
     },
   ];
@@ -59,7 +59,7 @@ export default function HomePage() {
           </p>
 
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight text-white">
-            Testes de Carga e Engenharia
+            Ensaios de Carga e Engenharia
             <span className="block text-[#ffffff]">
               com excelência e segurança.
             </span>
@@ -74,9 +74,9 @@ export default function HomePage() {
 
           {/* BOTÕES HERO */}
           <div className="flex flex-wrap gap-4">
-            {/* Botão WhatsApp (fundo branco, texto azul) */}
+            {/* Botão WhatsApp */}
             <a
-              href="https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%21+Encontrei+a+empresa+de+voc%C3%AAs+no+Google+e+tenho+interesse+em+conhecer+melhor+os+servi%C3%A7os.&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%21+Encontrei+a+vossa+empresa+no+Google+e+tenho+interesse+em+conhecer+melhor+os+servi%C3%A7os.&type=phone_number&app_absent=0"
               target="_blank"
               rel="noreferrer"
               className="
@@ -93,7 +93,7 @@ export default function HomePage() {
 
             {/* Botão secundário */}
             <Link
-              href="/servicos"
+              href="/servicospt"
               className="
                 inline-flex items-center justify-center
                 rounded-full border border-white/10 bg-white/30
@@ -146,16 +146,16 @@ export default function HomePage() {
               </p>
 
               <h2 className="text-[35px] font-semibold leading-tight text-slate-900">
-                Cada Projeto é tratado com
+                Cada projeto é tratado com
                 <br className="hidden md:block" />
                 dedicação e segurança.
               </h2>
 
               <p className="text-[20px] leading-relaxed text-slate-600">
-                Atuamos lado a lado com nossos clientes, desde o planejamento
-                até a execução, buscando decisões técnicas alinhadas às normas,
-                certificadoras e requisitos de cada operação, sempre com foco em
-                segurança, eficiência e resultado.
+                Atuamos lado a lado com os nossos clientes, desde o planeamento
+                até à execução, procurando decisões técnicas alinhadas às normas,
+                sociedades classificadoras e requisitos de cada operação, sempre
+                com foco na segurança, eficiência e resultado.
               </p>
             </div>
 
@@ -182,11 +182,11 @@ export default function HomePage() {
           <h2 className="text-[25px] font-semibold tracking-[0.1em] text-sky-700 uppercase">
             Somos uma empresa certificada.
           </h2>
+
           <p className="text-[16px] leading-relaxed text-slate-600">
-            A nossa atuação é sustentada por certificações certificações e
-            reconhecimentos que reforçam o compromisso com a qualidade, a
-            conformidade e a segurança em todas as etapas dos serviços
-            prestados.
+            A nossa atuação é sustentada por certificações e reconhecimentos que
+            reforçam o compromisso com a qualidade, a conformidade e a segurança
+            em todas as etapas dos serviços prestados.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -201,6 +201,7 @@ export default function HomePage() {
                   className="object-contain transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
+
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">ISO 9001:2015</h3>
                 <p className="text-xs text-slate-500">
@@ -208,6 +209,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+
             {/* DPC */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
@@ -218,6 +220,7 @@ export default function HomePage() {
                   className="object-contain transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
+
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">
                   Diretoria de Portos e Costas
@@ -225,6 +228,7 @@ export default function HomePage() {
                 <p className="text-xs text-slate-500">Marinha do Brasil.</p>
               </div>
             </div>
+
             {/* CRALOG */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
@@ -235,13 +239,15 @@ export default function HomePage() {
                   className="object-contain transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
+
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">CRALOG</h3>
                 <p className="text-xs text-slate-500">
-                  Certificação em Savatagem.
+                  Certificação em Salvamento.
                 </p>
               </div>
             </div>
+
             {/* DNV */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
@@ -252,6 +258,7 @@ export default function HomePage() {
                   className="object-contain transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
+
               <div className="space-y-1">
                 <h3 className="text-sm font-semibold">DNV</h3>
                 <p className="text-xs text-slate-500">
@@ -259,6 +266,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+
             {/* BV */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
@@ -278,6 +286,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+
             {/* ABS */}
             <div className="group border border-slate-200 rounded-2xl py-6 px-4 flex flex-col items-center text-center gap-3 bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1c2743]/60">
               <div className="relative w-28 h-20 md:w-32 md:h-24">
@@ -299,10 +308,11 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
         {/* BANDEIRAS */}
         <section className="space-y-6 pt-10">
           <h2 className="text-[25px] font-semibold tracking-[0.1em] text-sky-700 uppercase">
-            Bandeiras atendidas
+            Bandeiras abrangidas
           </h2>
 
           <p className="text-[16px] leading-relaxed text-slate-600">
@@ -371,7 +381,7 @@ export default function HomePage() {
             {services.map((service) => (
               <Link
                 key={service.slug}
-                href={`/servicos/${service.slug}`}
+                href={`/servicospt/${service.slug}`}
                 aria-label={`Ver detalhes de ${service.title}`}
                 className="group relative block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:border-[#1c2743]/60 min-h-[300px] md:min-h-[400px]"
               >
@@ -393,15 +403,18 @@ export default function HomePage() {
 
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute inset-0 bg-white/95" />
+
                   <div className="relative z-10 px-6 text-center flex flex-col items-center justify-center space-y-3">
                     <h3 className="text-[20px] font-semibold text-[#1c2743]">
                       {service.title}
                     </h3>
+
                     <p className="text-[14px] md:text-[16px] leading-relaxed text-slate-700">
                       {service.description}
                     </p>
+
                     <p className="text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.22em] text-sky-700">
-                      Saiba mais
+                      Saber mais
                     </p>
                   </div>
                 </div>
@@ -412,7 +425,7 @@ export default function HomePage() {
 
         {/* CTA FINAL – ESTILO NÚMEROS / MAPA */}
         <section className="relative w-full py-16">
-          {/* Mapa de fundo com baixa opacidade (coloque um arquivo em /public/img/mapa.png) */}
+          {/* Mapa de fundo com baixa opacidade */}
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-15">
             <Image
               src="/img/mapa.png"
@@ -429,13 +442,13 @@ export default function HomePage() {
             </p>
 
             <h2 className="text-3xl md:text-4xl font-semibold text-[#1c2743]">
-              Juntos com nossos clientes, transformamos desafios
+              Juntamente com os nossos clientes, transformamos desafios
               <br className="hidden md:block" />
               em soluções inovadoras.
             </h2>
 
             <p className="text-sm text-slate-500">
-              Juntos, construindo um futuro seguro.
+              Juntos, a construir um futuro seguro.
             </p>
 
             {/* NÚMEROS */}
@@ -447,7 +460,7 @@ export default function HomePage() {
 
               <div className="flex flex-col gap-1">
                 <h3 className="text-4xl font-light text-sky-600">100%</h3>
-                <p className="text-sm text-slate-600">Comprometimento</p>
+                <p className="text-sm text-slate-600">Compromisso</p>
               </div>
 
               <div className="flex flex-col gap-1">

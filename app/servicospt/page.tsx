@@ -1,4 +1,4 @@
-// app/servicos/page.tsx
+// app/servicospt/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -10,24 +10,24 @@ import { useEffect, useRef, useState } from "react";
    ======================================= */
 const services = [
   {
-    slug: "testes-de-carga",
-    title: "Testes de carga",
+    slug: "testes-de-cargapt",
+    title: "Ensaios de carga",
     description:
-      "Ensaios estáticos e dinâmicos com emissão de certificados e laudos conforme requisitos de sociedades classificadoras e normas vigentes.",
+      "Ensaios estáticos e dinâmicos com emissão de certificados e relatórios conforme os requisitos das sociedades classificadoras e normas em vigor.",
     image: "/img/servicos/testes-carga.jpg",
   },
   {
-    slug: "lsa-salvatagem",
-    title: "LSA / Salvatagem",
+    slug: "lsa-salvatagempt",
+    title: "LSA / Salvamento",
     description:
-      "Inspeções, manutenção e reparos em botes, guinchos, turcos e equipamentos de salvatagem, garantindo disponibilidade e segurança.",
+      "Inspeções, manutenção e reparações em botes, guinchos, turcos e equipamentos de salvamento, garantindo disponibilidade e segurança.",
     image: "/img/servicos/lsa-salvatagem1.jpg",
   },
   {
-    slug: "inspecoes-engenharia",
+    slug: "inspecoes-engenhariapt",
     title: "Inspeções e engenharia",
     description:
-      "Inspeções técnicas, relatórios detalhados e suporte de engenharia aplicada à integridade de ativos offshore e onshore.",
+      "Inspeções técnicas, relatórios detalhados e apoio de engenharia aplicada à integridade de ativos offshore e onshore.",
     image: "/img/servicos/inspecoes-engenharia.jpg",
   },
 ];
@@ -45,8 +45,8 @@ const nrSteps = [
   },
   {
     nr: "NR 11",
-    label: "Manuseio de Materiais",
-    title: "Transporte, Movimentação, Armazenagem .",
+    label: "Manuseamento de Materiais",
+    title: "Transporte, Movimentação e Armazenagem.",
     description:
       "Estabelece requisitos de segurança para o transporte, movimentação e armazenagem de materiais, como cargas pesadas ou volumosas.",
   },
@@ -55,14 +55,14 @@ const nrSteps = [
     label: "Segurança",
     title: "Trabalho em Máquinas e Equipamentos.",
     description:
-      "Medidas preventivas de segurança no uso de máquinas e equipamentos, garantindo a proteção dos trabalhadores contra acidentes.",
+      "Medidas preventivas de segurança na utilização de máquinas e equipamentos, garantindo a proteção dos trabalhadores contra acidentes.",
   },
   {
     nr: "NR 13",
     label: "Segurança",
-    title: "Caldeiras, Vasos de Pressão e Tubulações",
+    title: "Caldeiras, Vasos de Pressão e Tubagens",
     description:
-      "Operação de caldeiras, vasos de pressão e tubulações, equipamentos essenciais em diversos setores industriais.",
+      "Operação de caldeiras, vasos de pressão e tubagens, equipamentos essenciais em diversos setores industriais.",
   },
 ];
 
@@ -137,11 +137,11 @@ export default function ServicesPage() {
             Serviços
           </h1>
 
-          {/* parágrafo – REMOVIDO o […] e coloquei o texto completo */}
+          {/* parágrafo */}
           <p className="text-base md:text-lg text-slate-100 max-w-2xl">
-            Nossas soluções são estruturadas para atender às demandas de navios,
-            plataformas, estaleiros e unidades industriais onshore, com equipes
-            especializadas e foco absoluto em segurança, conformidade e
+            As nossas soluções são estruturadas para responder às exigências de
+            navios, plataformas, estaleiros e unidades industriais onshore, com
+            equipas especializadas e foco absoluto em segurança, conformidade e
             disponibilidade operacional.
           </p>
         </div>
@@ -160,11 +160,11 @@ export default function ServicesPage() {
             Principais serviços
           </h2>
 
-          {/* parágrafo – REMOVIDO o […] e texto completo */}
+          {/* parágrafo */}
           <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-            Nossas soluções são estruturadas para atender às demandas de navios,
-            plataformas, estaleiros e unidades industriais onshore, com equipes
-            especializadas e foco em segurança e conformidade.
+            As nossas soluções são estruturadas para responder às exigências de
+            navios, plataformas, estaleiros e unidades industriais onshore, com
+            equipas especializadas e foco em segurança e conformidade.
           </p>
 
           {/* GRID DE CARDS – mesmo estilo da home */}
@@ -172,7 +172,7 @@ export default function ServicesPage() {
             {services.map((s) => (
               <Link
                 key={s.slug}
-                href={`/servicos/${s.slug}`}
+                href={`/servicospt/${s.slug}`}
                 className="group relative block rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:border-[#1c2743]/60 min-h-[320px]"
               >
                 <Image

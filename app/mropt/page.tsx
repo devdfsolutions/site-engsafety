@@ -1,4 +1,4 @@
-// app/solucoes-em-mro/page.tsx
+// app/mropt/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -55,8 +55,8 @@ export default function SolucoesMroPage() {
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
                   Variedade na venda de materiais e equipamentos elétricos, como
-                  Lâmpadas; Luminárias; Tomadas; Interruptores; Filtros de linha
-                  e Cabos.
+                  lâmpadas, luminárias, tomadas, interruptores, filtros de linha
+                  e cabos.
                 </p>
               </div>
 
@@ -74,9 +74,9 @@ export default function SolucoesMroPage() {
                   Materiais à Prova de Explosão
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Soluções em segurança: câmeras de vigilância, DVR, sistemas de
+                  Soluções em segurança: câmaras de vigilância, DVR, sistemas de
                   alarme, centrais de alarme, sensores, telefones com
-                  identificador de chamadas e controles de acesso.
+                  identificador de chamadas e controlos de acesso.
                 </p>
               </div>
 
@@ -94,9 +94,9 @@ export default function SolucoesMroPage() {
                   Automação Industrial
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Peças e componentes para automação industrial, como Guias
-                  lineares; Servo motor; Redutores; Conectores elétricos;
-                  Controladores remotos; Placas de controle.
+                  Peças e componentes para automação industrial, como guias
+                  lineares, servomotores, redutores, conectores elétricos,
+                  controladores remotos e placas de controlo.
                 </p>
               </div>
 
@@ -114,9 +114,9 @@ export default function SolucoesMroPage() {
                   Soluções Facilities
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Eletrônicos: praticidade para o seu dia a dia. Encontre TVs,
-                  computadores, notebooks, tablets e muito mais para atender
-                  suas necessidades com tecnologia e eficiência.
+                  Eletrónicos: praticidade para o seu dia a dia. Encontre TVs,
+                  computadores, portáteis, tablets e muito mais para responder
+                  às suas necessidades com tecnologia e eficiência.
                 </p>
               </div>
             </div>
@@ -137,8 +137,8 @@ export default function SolucoesMroPage() {
                   Tubos &amp; Conexões
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Tubos em Aço Carbono, com ou sem costura, e Tubos em Aço Inox,
-                  Encontre Conexões soldáveis; Conexões roscáveis; Conectores
+                  Tubos em aço carbono, com ou sem costura, e tubos em aço inox.
+                  Encontre conexões soldáveis, conexões roscáveis e conectores
                   hidráulicos.
                 </p>
               </div>
@@ -157,9 +157,9 @@ export default function SolucoesMroPage() {
                   Ferramentas
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Oferecemos uma ampla linha de produtos, como furadeiras,
-                  parafusadeiras, serras, lixadeiras, chaves, martelos,
-                  alicates, parafusos e brocas.
+                  Oferecemos uma ampla linha de produtos, como berbequins,
+                  aparafusadoras, serras, lixadoras, chaves, martelos, alicates,
+                  parafusos e brocas.
                 </p>
               </div>
 
@@ -177,8 +177,8 @@ export default function SolucoesMroPage() {
                   Fixadores
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Peças de reposição genuínas são fornecidas como parte de
-                  nossas muitas soluções prontas para uso.
+                  Peças de reposição genuínas são fornecidas como parte das
+                  nossas muitas soluções prontas a utilizar.
                 </p>
               </div>
 
@@ -197,8 +197,8 @@ export default function SolucoesMroPage() {
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
                   Utilizados para proteger o trabalhador contra riscos que
-                  ameaçam a sua segurança, por exemplo: (luvas, máscaras e EPC):
-                  placas de sinalização, fitas antiderrapantes.
+                  ameaçam a sua segurança, por exemplo: luvas, máscaras e EPC,
+                  placas de sinalização e fitas antiderrapantes.
                 </p>
               </div>
             </div>
@@ -219,9 +219,9 @@ export default function SolucoesMroPage() {
                   Pintura
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Temos os materiais essenciais para suas reformas e pinturas,
-                  como Tintas de parede; Tinta Spray; Corantes; Selador;
-                  Fixador; Massa corrida e Pincéis.
+                  Temos os materiais essenciais para as suas remodelações e
+                  pinturas, como tintas de parede, tinta spray, corantes,
+                  selador, fixador, massa corrida e pincéis.
                 </p>
               </div>
 
@@ -239,9 +239,9 @@ export default function SolucoesMroPage() {
                   Refrigeração
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Aqui você encontra botijões, hélices, turbinas, termostatos,
-                  capacitores, válvulas, dampers e resistências com os melhores
-                  preços do mercado.
+                  Aqui encontra botijas, hélices, turbinas, termóstatos,
+                  condensadores, válvulas, dampers e resistências com os
+                  melhores preços do mercado.
                 </p>
               </div>
 
@@ -259,9 +259,9 @@ export default function SolucoesMroPage() {
                   Válvulas e Flanges
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Válvulas em projetos de tubulação, garantem o controle
-                  eficiente do escoamento de fluidos e Flanges em sistemas de
-                  tubulação industrial, conectam componentes
+                  Válvulas em projetos de tubagem garantem o controlo eficiente
+                  do escoamento de fluidos, e flanges em sistemas de tubagem
+                  industrial ligam componentes.
                 </p>
               </div>
 
@@ -280,8 +280,8 @@ export default function SolucoesMroPage() {
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
                   Oferecemos produtos e equipamentos de alta qualidade para
-                  atender suas necessidades industriais e tecnológicas com
-                  eficiência e confiabilidade.
+                  responder às suas necessidades industriais e tecnológicas com
+                  eficiência e fiabilidade.
                 </p>
               </div>
             </div>
@@ -354,8 +354,8 @@ export default function SolucoesMroPage() {
         </section>
 
         {/* =====================================================
-    BLOCO FINAL – INFORMAÇÕES DE CONTATO (CLICÁVEL)
-====================================================== */}
+            BLOCO FINAL – INFORMAÇÕES DE CONTACTO (CLICÁVEL)
+        ====================================================== */}
         <section className="bg-slate-50 py-16 md:py-20">
           <div className="max-w-5xl mx-auto px-4 md:px-6 text-center space-y-12">
             <div className="space-y-3">
@@ -363,19 +363,19 @@ export default function SolucoesMroPage() {
                 ENGSAFETY Soluções e Engenharia
               </p>
               <h2 className="text-2xl md:text-3xl font-bold text-[#1c2743]">
-                Informações de Contato
+                Informações de Contacto
               </h2>
               <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto">
-                Estamos sempre prontos para ajudar. Fale com nossa equipe
+                Estamos sempre prontos para ajudar. Fale com a nossa equipa
                 comercial e encontre a melhor solução em materiais e
                 equipamentos para o seu projeto.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-10 md:gap-8 text-sm text-slate-700">
-              {/* Email → /contato */}
+              {/* Email → /contatopt */}
               <a
-                href="/contato"
+                href="/contatopt"
                 className="space-y-2 hover:text-sky-600 transition-colors cursor-pointer"
               >
                 <div className="flex justify-center mb-2">
@@ -391,7 +391,7 @@ export default function SolucoesMroPage() {
 
               {/* Telefones → WhatsApp */}
               <a
-                href="https://api.whatsapp.com/send/?phone=5521986560236&text=Olá! Tenho interesse em soluções MRO."
+                href="https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%21+Tenho+interesse+em+solu%C3%A7%C3%B5es+MRO.&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noreferrer"
                 className="space-y-2 hover:text-sky-600 transition-colors cursor-pointer"
@@ -407,9 +407,9 @@ export default function SolucoesMroPage() {
                 <p>(21) 3491-5335</p>
               </a>
 
-              {/* Endereço → /contato */}
+              {/* Endereço → /contatopt */}
               <a
-                href="/contato"
+                href="/contatopt"
                 className="space-y-2 hover:text-sky-600 transition-colors cursor-pointer"
               >
                 <div className="flex justify-center mb-2">

@@ -1,4 +1,4 @@
-// app/locacao/page.tsx
+// app/locacaopt/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -8,7 +8,7 @@ import { useState } from "react";
 type Mode = "locacao" | "venda";
 
 const WHATSAPP_URL =
-  "https://api.whatsapp.com/send/?phone=5521986560236&text&type=phone_number&app_absent=0";
+  "https://api.whatsapp.com/send/?phone=5521986560236&text=Ol%C3%A1%2C+tenho+interesse+em+saber+mais+sobre+o+aluguer+ou+venda+de+equipamentos+da+ENGSAFETY.&type=phone_number&app_absent=0";
 
 export default function LocacaoPage() {
   const [mode, setMode] = useState<Mode>("locacao");
@@ -22,7 +22,7 @@ export default function LocacaoPage() {
         {/* Imagem de fundo */}
         <Image
           src="/img/locacao/heroloc.png"
-          alt="Locação de equipamentos ENGSAFETY"
+          alt="Aluguer de equipamentos ENGSAFETY"
           fill
           priority
           className="object-cover"
@@ -43,7 +43,7 @@ export default function LocacaoPage() {
               "
             >
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-wide">
-                LOCAÇÃO DE EQUIPAMENTOS
+                ALUGUER DE EQUIPAMENTOS
               </h1>
               <p className="mt-3 text-sm md:text-base max-w-2xl mx-auto">
                 Soluções completas para testes, ensaios e operações marítimas e
@@ -56,7 +56,7 @@ export default function LocacaoPage() {
                   target="_blank"
                   className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-sky-600 hover:bg-sky-700 text-sm md:text-base font-semibold shadow-md"
                 >
-                  Fale Conosco
+                  Fale connosco
                 </Link>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function LocacaoPage() {
         {/* Título principal */}
         <section className="text-center space-y-2">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c2743]">
-            Locação para Testes
+            Aluguer para Testes
           </h2>
           <p className="text-slate-500 text-sm md:text-base">ENGSAFETY</p>
         </section>
@@ -85,13 +85,13 @@ export default function LocacaoPage() {
             <div className="relative w-full aspect-[4/3] mb-4">
               <Image
                 src="/img/locacao/loc1.png"
-                alt="Bolsas d'água"
+                alt="Bolsas de água"
                 fill
                 className="object-cover rounded-xl"
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Bolsas D’água
+              Bolsas de Água
             </h3>
             <p className="text-slate-500 text-xs mt-1">Water Bags</p>
           </div>
@@ -107,7 +107,7 @@ export default function LocacaoPage() {
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Células De Carga
+              Células de Carga
             </h3>
             <p className="text-slate-500 text-xs mt-1">Load Cells</p>
           </div>
@@ -123,7 +123,7 @@ export default function LocacaoPage() {
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Kits Para Teste Em Baleeiras
+              Kits para Teste em Baleeiras
             </h3>
             <p className="text-slate-500 text-xs mt-1">Lifeboats Test Kits</p>
           </div>
@@ -139,7 +139,7 @@ export default function LocacaoPage() {
               />
             </div>
             <h3 className="font-semibold text-lg text-[#1c2743]">
-              Dispositivo De Tração
+              Dispositivo de Tração
             </h3>
             <p className="text-slate-500 text-xs mt-1">
               Traction devices for Padeyes, Tie Down Points, Beams and Hook
@@ -149,55 +149,54 @@ export default function LocacaoPage() {
         </section>
 
         {/* =====================================
-            BLOCO BOTE + TOGGLE LOCAÇÃO / VENDA
+            BLOCO BOTE + TOGGLE ALUGUER / VENDA
            ===================================== */}
         <section className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-{/* Imagem grande COM HOVER IGUAL HERO */}
-<div className="relative w-full min-h-[260px] md:min-h-[320px] rounded-xl overflow-hidden group">
-  <Image
-    src="/img/locacao/loc5.png"
-    alt="Bote de resgate ENGSAFETY"
-    fill
-    className="object-cover"
-  />
+          {/* Imagem grande COM HOVER IGUAL HERO */}
+          <div className="relative w-full min-h-[260px] md:min-h-[320px] rounded-xl overflow-hidden group">
+            <Image
+              src="/img/locacao/loc5.png"
+              alt="Bote de resgate ENGSAFETY"
+              fill
+              className="object-cover"
+            />
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/60 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300" />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/60 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300" />
 
-  {/* Conteúdo */}
-  <div className="absolute inset-0 flex items-center justify-center">
-    <div
-      className="
-        text-center text-white px-4
-        opacity-100 md:opacity-0 md:group-hover:opacity-100
-        transition-opacity duration-300
-      "
-    >
-      <h3 className="text-xl md:text-2xl font-bold tracking-wide">
-        LOCAÇÃO DE BOTES DE RESGATE
-      </h3>
+            {/* Conteúdo */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div
+                className="
+                  text-center text-white px-4
+                  opacity-100 md:opacity-0 md:group-hover:opacity-100
+                  transition-opacity duration-300
+                "
+              >
+                <h3 className="text-xl md:text-2xl font-bold tracking-wide">
+                  ALUGUER DE BOTES DE RESGATE
+                </h3>
 
-      <p className="mt-2 text-xs md:text-sm text-white/90 max-w-xs mx-auto">
-        Segurança, agilidade e confiabilidade para operações marítimas.
-      </p>
+                <p className="mt-2 text-xs md:text-sm text-white/90 max-w-xs mx-auto">
+                  Segurança, agilidade e fiabilidade para operações marítimas.
+                </p>
 
-      <div className="mt-5">
-        <Link
-          href={WHATSAPP_URL}
-          target="_blank"
-          className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-sky-600 hover:bg-sky-700 text-sm md:text-base font-semibold shadow-md"
-        >
-          Fale Conosco
-        </Link>
-      </div>
-    </div>
-  </div>
-</div>
-
+                <div className="mt-5">
+                  <Link
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-sky-600 hover:bg-sky-700 text-sm md:text-base font-semibold shadow-md"
+                  >
+                    Fale connosco
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Texto com toggle */}
           <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 md:p-6">
-            {/* Toggle Locação / Venda */}
+            {/* Toggle Aluguer / Venda */}
             <div className="flex items-center justify-end gap-3 text-xs font-medium mb-4">
               <button
                 type="button"
@@ -208,7 +207,7 @@ export default function LocacaoPage() {
                     : "text-slate-500 hover:text-slate-700"
                 }
               >
-                Locação
+                Aluguer
               </button>
 
               <button
@@ -216,7 +215,7 @@ export default function LocacaoPage() {
                 onClick={() =>
                   setMode((prev) => (prev === "locacao" ? "venda" : "locacao"))
                 }
-                aria-label="Alternar entre locação e venda"
+                aria-label="Alternar entre aluguer e venda"
                 className={`relative h-6 w-11 rounded-full transition-colors ${
                   mode === "venda" ? "bg-sky-500" : "bg-slate-300"
                 }`}
@@ -245,14 +244,14 @@ export default function LocacaoPage() {
             {mode === "locacao" ? (
               <div className="space-y-3 text-sm md:text-[15px] text-slate-700 leading-relaxed">
                 <p>
-                  A segurança em operações marítimas é prioridade, e a locação
+                  A segurança em operações marítimas é prioridade, e o aluguer
                   de botes de resgate da ENGSAFETY garante eficiência e
-                  confiabilidade para sua empresa.
+                  fiabilidade para a sua empresa.
                 </p>
                 <p>
-                  Com flexibilidade de locação e prazos ajustados à sua
-                  necessidade, nossa equipe está pronta para ajudar na escolha
-                  da melhor solução para a sua demanda.
+                  Com flexibilidade de aluguer e prazos ajustados à sua
+                  necessidade, a nossa equipa está pronta para ajudar na escolha
+                  da melhor solução para a sua operação.
                 </p>
                 <p>
                   Garanta a proteção e segurança da sua tripulação com os botes
@@ -267,14 +266,14 @@ export default function LocacaoPage() {
                   <strong>venda de botes de resgate</strong> de alta qualidade.
                 </p>
                 <p>
-                  Além disso, oferecemos consultoria técnica para ajudar sua
-                  empresa a escolher o modelo ideal, de acordo com as suas
+                  Além disso, disponibilizamos consultoria técnica para ajudar a
+                  sua empresa a escolher o modelo ideal, de acordo com as suas
                   necessidades operacionais.
                 </p>
                 <p>
-                  Invista na segurança da sua equipe com os botes de resgate do
-                  ENGSAFETY. Entre em contato para conhecer nossos modelos e
-                  obter uma solução sob medida para suas operações.
+                  Invista na segurança da sua equipa com os botes de resgate da
+                  ENGSAFETY. Entre em contacto para conhecer os nossos modelos e
+                  obter uma solução à medida para as suas operações.
                 </p>
               </div>
             )}
